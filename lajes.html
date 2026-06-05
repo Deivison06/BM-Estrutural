@@ -9,6 +9,83 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/style.css">
+<style>
+/* ============================================================
+   CARROSSEL 3D COVER FLOW — seção #porque (escopo desta página)
+   Usa as variáveis já definidas no projeto (--yellow, --navy...).
+   ============================================================ */
+.why-carousel{
+  position:relative;
+  margin-top:10px;
+  perspective:1600px;
+  user-select:none;
+}
+.wc-stage{
+  position:relative;
+  height:340px;
+  transform-style:preserve-3d;
+}
+/* cada card é posicionado/animado via JS (translateX + scale + blur) */
+.why-carousel .why-card{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:min(340px,82vw);
+  min-height:248px;
+  margin:0;
+  padding:32px 30px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  background:linear-gradient(160deg,var(--navy-800),var(--navy-900));
+  border:1px solid var(--line-light);
+  border-radius:var(--r,16px);
+  box-shadow:0 24px 50px -26px rgba(0,0,0,.6);
+  transform:translate(-50%,-50%);
+  transition:transform .5s ease-in-out, filter .5s ease-in-out, opacity .5s ease-in-out, box-shadow .5s ease-in-out, border-color .5s ease-in-out;
+  will-change:transform,filter,opacity;
+  backface-visibility:hidden;
+  cursor:pointer;
+}
+.why-carousel .why-card .ic{width:36px;height:36px;color:var(--yellow)}
+.why-carousel .why-card .ic svg{width:100%;height:100%;display:block}
+.why-carousel .why-card h4{font-family:var(--head);font-weight:700;font-size:19px;line-height:1.2;color:#fff}
+.why-carousel .why-card p{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.74)}
+/* card central em destaque: borda dourada + brilho */
+.why-carousel .why-card.is-active{
+  border-color:var(--yellow);
+  box-shadow:0 0 0 1px var(--yellow), 0 26px 60px -22px rgba(237,205,31,.45), 0 30px 60px -30px rgba(0,0,0,.7);
+}
+
+/* setas */
+.wc-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:60;
+  width:52px;height:52px;border-radius:999px;
+  display:grid;place-items:center;
+  background:rgba(6,34,63,.06);border:1px solid var(--line-strong);
+  color:var(--navy);font-size:20px;line-height:1;
+  transition:background .2s,color .2s,border-color .2s,transform .2s;
+}
+.wc-arrow:hover{background:var(--yellow);color:var(--navy-900);border-color:var(--yellow)}
+.wc-prev{left:max(6px,2vw)}
+.wc-next{right:max(6px,2vw)}
+
+/* dots */
+.wc-dots{display:flex;justify-content:center;gap:10px;margin-top:30px}
+.wc-dot{
+  width:9px;height:9px;border-radius:999px;padding:0;border:0;
+  background:var(--line-strong);transition:background .3s,transform .3s,width .3s;
+}
+.wc-dot.is-active{background:var(--yellow-deep);width:26px;transform:none}
+
+/* ---- mobile: 1 card por vez, sem efeito 3D lateral ---- */
+@media (max-width:768px){
+  .why-carousel{perspective:none}
+  .wc-stage{height:auto;min-height:300px}
+  .why-carousel .why-card{width:min(360px,86vw)}
+  .wc-arrow{width:46px;height:46px;font-size:18px}
+}
+</style>
 </head>
 <body>
 
@@ -218,32 +295,40 @@
       <div class="sec-rule"></div>
     </div>
 
-    <div class="why-grid reveal">
-      <div class="why-card">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-        <h4>25 anos de experiência</h4>
-        <p>Tradição e know-how técnico acumulados em milhares de obras pelo estado de São Paulo.</p>
+    <!-- Carrossel 3D cover flow (JS puro, escopo desta página) -->
+    <div class="why-carousel reveal" id="whyCarousel" aria-roledescription="carrossel">
+      <button class="wc-arrow wc-prev" type="button" aria-label="Card anterior">&larr;</button>
+
+      <div class="wc-stage" id="wcStage">
+        <div class="why-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <h4>25 anos de experiência</h4>
+          <p>Tradição e know-how técnico acumulados em milhares de obras pelo estado de São Paulo.</p>
+        </div>
+        <div class="why-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0z"/><path d="M4 21v-1a6 6 0 0112 0v1"/></svg></span>
+          <h4>Engenheiros experientes</h4>
+          <p>Equipe técnica que dimensiona a solução estrutural ideal para cada projeto e vão.</p>
+        </div>
+        <div class="why-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h4>Qualidade certificada</h4>
+          <p>Matérias-primas certificadas e produção conforme as normas técnicas vigentes.</p>
+        </div>
+        <div class="why-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+          <h4>Atendimento diferenciado</h4>
+          <p>Suporte técnico próximo, do orçamento à entrega, para tirar dúvidas em cada etapa.</p>
+        </div>
+        <div class="why-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5h11l3 5M5 13h14v4H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg></span>
+          <h4>Entrega em todo SP</h4>
+          <p>Logística própria com foco em Jundiaí e Campinas, atendendo todo o estado.</p>
+        </div>
       </div>
-      <div class="why-card">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0z"/><path d="M4 21v-1a6 6 0 0112 0v1"/></svg></span>
-        <h4>Engenheiros experientes</h4>
-        <p>Equipe técnica que dimensiona a solução estrutural ideal para cada projeto e vão.</p>
-      </div>
-      <div class="why-card">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h4>Qualidade certificada</h4>
-        <p>Matérias-primas certificadas e produção conforme as normas técnicas vigentes.</p>
-      </div>
-      <div class="why-card">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
-        <h4>Atendimento diferenciado</h4>
-        <p>Suporte técnico próximo, do orçamento à entrega, para tirar dúvidas em cada etapa.</p>
-      </div>
-      <div class="why-card">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5h11l3 5M5 13h14v4H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg></span>
-        <h4>Entrega em todo SP</h4>
-        <p>Logística própria com foco em Jundiaí e Campinas, atendendo todo o estado.</p>
-      </div>
+
+      <button class="wc-arrow wc-next" type="button" aria-label="Próximo card">&rarr;</button>
+      <div class="wc-dots" id="wcDots" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -284,5 +369,117 @@
 </footer>
 
 <script src="scripts/app.js"></script>
+<script>
+/* ============================================================
+   Carrossel 3D cover flow (#porque) — JavaScript puro
+   ============================================================ */
+(function () {
+  'use strict';
+  var root = document.getElementById('whyCarousel');
+  if (!root) return;
+
+  var stage = document.getElementById('wcStage');
+  var dotsWrap = document.getElementById('wcDots');
+  var cards = Array.prototype.slice.call(stage.querySelectorAll('.why-card'));
+  var n = cards.length;
+  if (!n) return;
+
+  var active = Math.floor(n / 2);   // começa no card do meio
+  var timer = null;
+  var DUR = 3000;
+  var mq = window.matchMedia('(max-width:768px)');
+
+  /* menor deslocamento circular entre i e o card ativo (ex.: -2..2) */
+  function offsetOf(i) {
+    var d = i - active;
+    if (d > n / 2) d -= n;
+    if (d < -n / 2) d += n;
+    return d;
+  }
+
+  function place(card, off) {
+    var x, ry, scale, blur, op, z, active0 = (off === 0);
+    if (mq.matches) {
+      /* mobile: só o card central visível, sem 3D lateral */
+      if (active0) { x = 0; scale = 1; blur = 0; op = 1; z = 30; }
+      else { x = off > 0 ? 120 : -120; scale = .9; blur = 0; op = 0; z = 0; }
+      card.style.transform = 'translate(-50%,-50%) translateX(' + x + '%) scale(' + scale + ')';
+    } else {
+      var a = Math.abs(off);
+      if (a === 0) { x = 0; ry = 0; scale = 1.06; blur = 0; op = 1; z = 30; }
+      else if (a === 1) { x = off * 260; ry = off * -22; scale = .86; blur = 1.5; op = .92; z = 20; }
+      else { x = off * 235; ry = off * -28; scale = .72; blur = 3; op = .5; z = 10; }
+      card.style.transform = 'translate(-50%,-50%) translateX(' + x + 'px) rotateY(' + ry + 'deg) scale(' + scale + ')';
+    }
+    card.style.filter = blur ? 'blur(' + blur + 'px)' : 'none';
+    card.style.opacity = op;
+    card.style.zIndex = z;
+    card.style.pointerEvents = (op === 0) ? 'none' : 'auto';
+    card.classList.toggle('is-active', active0);
+    card.setAttribute('aria-hidden', active0 ? 'false' : 'true');
+  }
+
+  function render() {
+    cards.forEach(function (c, i) { place(c, offsetOf(i)); });
+    Array.prototype.slice.call(dotsWrap.children).forEach(function (d, i) {
+      d.classList.toggle('is-active', i === active);
+    });
+  }
+
+  function go(i) { active = (i + n) % n; render(); }
+  function next() { go(active + 1); }
+  function prev() { go(active - 1); }
+
+  function start() { stop(); timer = setInterval(next, DUR); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+  /* dots */
+  for (var k = 0; k < n; k++) {
+    (function (i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'wc-dot';
+      b.setAttribute('aria-label', 'Ir ao card ' + (i + 1));
+      b.addEventListener('click', function () { go(i); start(); });
+      dotsWrap.appendChild(b);
+    })(k);
+  }
+
+  /* setas */
+  root.querySelector('.wc-next').addEventListener('click', function () { next(); start(); });
+  root.querySelector('.wc-prev').addEventListener('click', function () { prev(); start(); });
+
+  /* clicar / passar o mouse num card lateral o torna central */
+  cards.forEach(function (c, i) {
+    c.addEventListener('click', function () { if (i !== active) { go(i); start(); } });
+    c.addEventListener('mouseenter', function () { if (!mq.matches && i !== active) go(i); });
+  });
+
+  /* pausa o giro automático com o mouse sobre o carrossel */
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+
+  /* swipe no mobile */
+  var sx = 0, drag = false;
+  stage.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; drag = true; stop(); }, { passive: true });
+  stage.addEventListener('touchend', function (e) {
+    if (!drag) return;
+    var dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
+    drag = false; start();
+  }, { passive: true });
+
+  /* reposiciona ao trocar entre desktop/mobile */
+  (mq.addEventListener ? mq.addEventListener('change', render) : mq.addListener(render));
+
+  /* pausa quando a aba não está visível */
+  document.addEventListener('visibilitychange', function () {
+    document.hidden ? stop() : start();
+  });
+
+  render();
+  start();
+})();
+</script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="styles/style.css">
 <style>
 /* ============================================================
-   ESTILOS DA HOME (index) — em <style> para não tocar style.css
+   ESTILOS DA HOME (index) — inline no head para não tocar style.css
    ============================================================ */
 
 /* ---- HERO com vídeo full-screen ---- */
@@ -140,11 +140,11 @@
 <!-- ============================ HEADER ============================ -->
 <header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="BM Estrutural">
+    <a class="brand" href="#top-hero" aria-label="BM Estrutural">
       <img src="https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8172524~mv2.png/v1/fill/w_350,h_192,al_c,q_85,enc_avif,quality_auto/LOGO%20SITE_SEM_FUNDO.png" alt="BM ESTRUTURAL">
     </a>
     <nav class="nav" id="nav">
-      <a href="#top" class="active">INÍCIO</a>
+      <a href="#top-hero" class="active">INÍCIO</a>
       <a href="#produtos">PRODUTOS</a>
       <a href="#quem-somos">QUEM SOMOS</a>
       <a href="#obras">OBRAS</a>
@@ -159,7 +159,7 @@
 <!-- mobile nav -->
 <div class="mnav" id="mnav">
   <button class="mclose" id="mclose" aria-label="Fechar">&times;</button>
-  <a href="#top">INÍCIO</a>
+  <a href="#top-hero">INÍCIO</a>
   <a href="#produtos">PRODUTOS</a>
   <a href="lajes.html">LAJES</a>
   <a href="aco.html">AÇO</a>
@@ -170,61 +170,22 @@
   <a class="cta-line" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento &rarr;</a>
 </div>
 
-<!-- ============================ BANNER ROLÁVEL ============================ -->
-<section class="banner" id="banner">
-  <div class="banner-track" id="track">
-
-    <!-- SLIDE 1 — LAJES -->
-    <div class="slide">
-      <div class="slide-grid">
-        <div class="slide-copy">
-          <h1 class="slide-title">LAJES <span class="hl">TRELIÇADAS</span></h1>
-          <p class="slide-sub">Fabricação própria, 25 anos de experiência e atendimento em Jundiaí, Campinas e todo o estado de São Paulo — qualidade, segurança e agilidade em cada obra.</p>
-          <div class="slide-actions">
-            <a class="btn-solid" href="lajes.html">Ver Lajes <span>&rarr;</span></a>
-            <a class="btn-ghost" href="https://wa.me/551938782233" target="_blank" rel="noopener">Orçamento</a>
-          </div>
-        </div>
-        <div class="slide-media ticks">
-          <video
-            class="slide-video"
-            src="https://video.wixstatic.com/video/e9aa01_0ead27b3e69540c485024ad9b81a75a0/720p/mp4/file.mp4"
-            autoplay muted loop playsinline
-            poster="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg"
-          ></video>
-          <div class="frame-meta"><span>BM / LAJES</span><span>SP — JUNDIAÍ · CAMPINAS</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SLIDE 2 — AÇO -->
-    <div class="slide">
-      <div class="slide-grid">
-        <div class="slide-copy">
-          <h1 class="slide-title">AÇO PARA <span class="hl">CONSTRUÇÃO CIVIL</span></h1>
-          <p class="slide-sub">Representante exclusivo Morandin — vergalhões, telas soldadas e aço cortado e dobrado, entregues na sua obra com qualidade certificada.</p>
-          <div class="slide-actions">
-            <a class="btn-solid" href="aco.html">Ver Produtos de AÇO <span>&rarr;</span></a>
-            <a class="btn-ghost" href="https://wa.me/551938782233" target="_blank" rel="noopener">Orçamento</a>
-          </div>
-        </div>
-        <div class="slide-media ticks">
-          <img src="https://static.wixstatic.com/media/e9aa01_6ea87fe0ab0b43cab3aceae7ac2d3e5d~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/team-image4.jpg" alt="Telas soldadas e aço para construção civil">
-          <div class="frame-meta"><span>BM / AÇO</span><span>REPRESENTANTE MORANDIN</span></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="banner-ui">
-    <div class="dots" id="dots">
-      <button class="dot active" data-i="0" aria-label="Slide 1"></button>
-      <button class="dot" data-i="1" aria-label="Slide 2"></button>
-    </div>
-    <div class="arrows">
-      <button class="arrow" id="prev" aria-label="Anterior">&larr;</button>
-      <button class="arrow" id="next" aria-label="Próximo">&rarr;</button>
+<!-- ============================ HERO COM VÍDEO FULL-SCREEN ============================ -->
+<section class="hero-video" id="top-hero">
+  <video
+    class="hero-bg-video"
+    src="https://video.wixstatic.com/video/e9aa01_0ead27b3e69540c485024ad9b81a75a0/720p/mp4/file.mp4"
+    autoplay muted loop playsinline
+    poster="https://static.wixstatic.com/media/e9aa01_0ead27b3e69540c485024ad9b81a75a0f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85,enc_avif,quality_auto/e9aa01_0ead27b3e69540c485024ad9b81a75a0f000.jpg"
+  ></video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content wrap">
+    <span class="hero-badge">BM ESTRUTURAL — 25 ANOS</span>
+    <h1 class="hero-title">LAJES <span class="hl">TRELIÇADAS</span><br>E AÇO PARA<br>CONSTRUÇÃO CIVIL</h1>
+    <p class="hero-sub">Fabricação própria de lajes e representante exclusivo Morandin — soluções estruturais para toda a sua obra em Jundiaí, Campinas e todo o estado de São Paulo.</p>
+    <div class="hero-actions">
+      <a class="btn-solid" href="#produtos">Ver Produtos <span>&rarr;</span></a>
+      <a class="btn-ghost" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento</a>
     </div>
   </div>
 </section>
@@ -317,10 +278,10 @@
       <div class="sec-rule"></div>
     </div>
 
-    <div class="about-grid">
+    <div class="about-grid" style="align-items:start">
       <div class="about-copy">
         <p class="lead reveal">A <b>BM Estrutural Soluções em Engenharia</b> é uma empresa com mais de 25 anos de experiência, especializada na fabricação de lajes treliçadas e, como <b>representante exclusivo Morandin</b>, no fornecimento de aço para construção civil. Com engenheiros experientes e rigor técnico, atuamos em todo o estado de São Paulo — com foco nas regiões de Jundiaí e Campinas — entregando soluções estruturais para pequenos e grandes vãos com qualidade, segurança e agilidade em cada projeto.</p>
-        <div class="stats reveal d1">
+        <div class="stats reveal d1" style="grid-template-columns:repeat(4,1fr)">
           <div class="stat"><span class="big">25</span><span class="lbl">Anos de Experiência</span></div>
           <div class="stat"><div class="mk"></div><span class="lbl">Valor Justo para cada Obra</span></div>
           <div class="stat"><div class="mk"></div><span class="lbl">Material ideal para cada Projeto</span></div>
@@ -348,7 +309,9 @@
 
     <div class="obras-grid">
       <article class="obra reveal">
-        <img src="https://static.wixstatic.com/media/e9aa01_ff613288d5854aed8b9f62fb353d37e6~mv2.png/v1/crop/x_7,y_0,w_595,h_733/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/1.png" alt="Inovar">
+        <div class="obra-img">
+          <img src="https://static.wixstatic.com/media/e9aa01_ff613288d5854aed8b9f62fb353d37e6~mv2.png/v1/crop/x_7,y_0,w_595,h_733/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/1.png" alt="Inovar">
+        </div>
         <div class="obra-body">
           <span class="n">/01</span>
           <h3>Inovar</h3>
@@ -358,7 +321,9 @@
       </article>
 
       <article class="obra reveal d1">
-        <img src="https://static.wixstatic.com/media/e9aa01_f83e9d99d41247e49c2555263e02933e~mv2.png/v1/crop/x_121,y_0,w_693,h_854/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/2.png" alt="Renovar">
+        <div class="obra-img">
+          <img src="https://static.wixstatic.com/media/e9aa01_f83e9d99d41247e49c2555263e02933e~mv2.png/v1/crop/x_121,y_0,w_693,h_854/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/2.png" alt="Renovar">
+        </div>
         <div class="obra-body">
           <span class="n">/02</span>
           <h3>Renovar</h3>
@@ -368,7 +333,9 @@
       </article>
 
       <article class="obra reveal d2">
-        <img src="https://static.wixstatic.com/media/e9aa01_ebe5f9f6d71148a39f2510c1b531b08d~mv2.png/v1/crop/x_57,y_0,w_689,h_849/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/3.png" alt="Evoluir">
+        <div class="obra-img">
+          <img src="https://static.wixstatic.com/media/e9aa01_ebe5f9f6d71148a39f2510c1b531b08d~mv2.png/v1/crop/x_57,y_0,w_689,h_849/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/3.png" alt="Evoluir">
+        </div>
         <div class="obra-body">
           <span class="n">/03</span>
           <h3>Evoluir</h3>

@@ -575,7 +575,7 @@ section{position:relative}
    POR QUE ESCOLHER / DIFERENCIAIS — grade de cards
    ============================================================ */
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
-.on-navy .why-grid{background:var(--line-light);border-color:var(--line-light)}
+
 .why-card{
   background:var(--concrete-2);padding:30px 26px;display:flex;flex-direction:column;gap:14px;min-height:170px;
 }
