@@ -1,0 +1,50 @@
+# ============================================================
+# BM ESTRUTURAL — URLs limpas (PHP sem extensão)
+# ============================================================
+
+# Não listar diretórios
+Options -Indexes
+
+# Página inicial
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # ----------------------------------------------------------
+  # Bloquear acesso direto à pasta de includes (header/footer)
+  # ----------------------------------------------------------
+  RewriteRule ^includes(/|$) - [F,L]
+
+  # ----------------------------------------------------------
+  # /index.php  ->  /            (301)
+  # /index      ->  /            (301)
+  # ----------------------------------------------------------
+  RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+  RewriteRule ^ / [R=301,L]
+  RewriteRule ^index/?$ / [R=301,L]
+
+  # ----------------------------------------------------------
+  # /home  ->  index.php         (interno, sem redirect visível)
+  # ----------------------------------------------------------
+  RewriteRule ^home/?$ index.php [L]
+
+  # ----------------------------------------------------------
+  # /pagina.php  ->  /pagina     (301, remove a extensão .php)
+  # Assets estáticos (.css, .js, .png, .jpg...) não casam aqui,
+  # pois a condição exige a extensão .php na requisição.
+  # ----------------------------------------------------------
+  RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.php[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # ----------------------------------------------------------
+  # /pagina  ->  pagina.php      (resolução interna, sem redirect)
+  # Só reescreve quando NÃO for arquivo/diretório existente
+  # e quando o respectivo .php existir — assets passam direto.
+  # ----------------------------------------------------------
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^(.+?)/?$ $1.php [L]
+</IfModule>

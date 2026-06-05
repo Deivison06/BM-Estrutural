@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BM Estrutural | Lajes e Aço para Construção Civil — Jundiaí e Campinas</title>
-<meta name="description" content="BM Estrutural Soluções em Engenharia: 25 anos fabricando lajes treliçadas e representante exclusivo Morandin de aço para construção civil. Atendimento em todo o estado de São Paulo, com foco em Jundiaí e Campinas.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/style.css">
+<?php
+$active = 'home';
+$title  = 'BM Estrutural | Lajes e Aço para Construção Civil — Jundiaí e Campinas';
+$desc   = 'BM Estrutural Soluções em Engenharia: 25 anos fabricando lajes treliçadas e representante exclusivo Morandin de aço para construção civil. Atendimento em todo o estado de São Paulo, com foco em Jundiaí e Campinas.';
+$cta_href = 'https://wa.me/551938782233';
+ob_start(); ?>
 <style>
 /* ============================================================
    ESTILOS DA HOME (index) — inline no head para não tocar style.css
@@ -134,42 +129,7 @@
 .on-navy .obra-body .more{ color:var(--navy); }
 .on-navy .obra-body .more:hover{ color:var(--yellow-deep); }
 </style>
-</head>
-<body>
-
-<!-- ============================ HEADER ============================ -->
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a class="brand" href="#top-hero" aria-label="BM Estrutural">
-      <img src="https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8172524~mv2.png/v1/fill/w_350,h_192,al_c,q_85,enc_avif,quality_auto/LOGO%20SITE_SEM_FUNDO.png" alt="BM ESTRUTURAL">
-    </a>
-    <nav class="nav" id="nav">
-      <a href="#top-hero" class="active">INÍCIO</a>
-      <a href="#produtos">PRODUTOS</a>
-      <a href="#quem-somos">QUEM SOMOS</a>
-      <a href="#obras">OBRAS</a>
-      <a href="#regioes">REGIÕES</a>
-      <a href="#contato">CONTATO</a>
-    </nav>
-    <a class="header-cta" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<!-- mobile nav -->
-<div class="mnav" id="mnav">
-  <button class="mclose" id="mclose" aria-label="Fechar">&times;</button>
-  <a href="#top-hero">INÍCIO</a>
-  <a href="#produtos">PRODUTOS</a>
-  <a href="lajes.html">LAJES</a>
-  <a href="aco.html">AÇO</a>
-  <a href="#quem-somos">QUEM SOMOS</a>
-  <a href="#obras">OBRAS</a>
-  <a href="#regioes">REGIÕES</a>
-  <a href="#contato">CONTATO</a>
-  <a class="cta-line" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento &rarr;</a>
-</div>
-
+<?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
 <!-- ============================ HERO COM VÍDEO FULL-SCREEN ============================ -->
 <section class="hero-video" id="top-hero">
   <video
@@ -216,7 +176,7 @@
         <div class="prod-body">
           <h3>Laje Treliçada</h3>
           <p>Vigotas treliçadas com enchimento em EPS ou cerâmica — excelente opção para obras de pequeno e grande porte.</p>
-          <a class="prod-link" href="lajes.html#laje-trelicada">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#laje-trelicada">Saiba mais <span class="ar">&rarr;</span></a>
         </div>
       </article>
 
@@ -226,7 +186,7 @@
         <div class="prod-body">
           <h3>Painel Treliçado</h3>
           <p>Fôrma zero e acabamento liso na face inferior, em painéis de 25 cm ou 1,10 m — pode ficar aparente.</p>
-          <a class="prod-link" href="lajes.html#painel-trelicado">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#painel-trelicado">Saiba mais <span class="ar">&rarr;</span></a>
         </div>
       </article>
 
@@ -236,7 +196,7 @@
         <div class="prod-body">
           <h3>Laje Fácil</h3>
           <p>Leve, prática e com encaixe intuitivo: instalação ágil e segura, sem equipamentos pesados.</p>
-          <a class="prod-link" href="lajes.html#laje-facil">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#laje-facil">Saiba mais <span class="ar">&rarr;</span></a>
         </div>
       </article>
 
@@ -246,7 +206,7 @@
         <div class="prod-body">
           <h3>Telas Soldadas</h3>
           <p>Em aço CA-60, distribuem as cargas sobre as lajes e reduzem fissuras em calçadas e estruturas.</p>
-          <a class="prod-link" href="lajes.html#telas">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#telas">Saiba mais <span class="ar">&rarr;</span></a>
         </div>
       </article>
     </div>
@@ -255,13 +215,13 @@
     <article class="prod-aco reveal">
       <span class="prod-badge">NOVO</span>
       <div class="prod-aco-media ticks">
-        <img src="https://static.wixstatic.com/media/e9aa01_6ea87fe0ab0b43cab3aceae7ac2d3e5d~mv2.jpg/v1/fill/w_900,h_700,al_c,q_85,enc_avif,quality_auto/team-image4.jpg" alt="Aço para construção civil — vergalhões e telas soldadas">
+        <img src="./vergalhoes_CA50_e_CA.webp" alt="Aço para construção civil — vergalhões e telas soldadas">
       </div>
       <div class="prod-aco-body">
         <span class="prod-aco-idx">05 / NOVA VERTICAL</span>
         <h3>AÇO para Construção Civil</h3>
         <p>Representante exclusivo Morandin — vergalhões CA-50, telas soldadas e AÇO cortado e dobrado.</p>
-        <a class="btn-solid" href="aco.html">Ver Produtos <span>&rarr;</span></a>
+        <a class="btn-solid" href="/aco">Ver Produtos <span>&rarr;</span></a>
       </div>
     </article>
   </div>
@@ -450,28 +410,4 @@
   </div>
 </section>
 
-<!-- ============================ FOOTER ============================ -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <img src="https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8172524~mv2.png/v1/fill/w_350,h_192,al_c,q_85,enc_avif,quality_auto/LOGO%20SITE_SEM_FUNDO.png" alt="BM ESTRUTURAL">
-      <nav class="footer-nav">
-        <a href="index.html">INÍCIO</a>
-        <a href="lajes.html">LAJES</a>
-        <a href="aco.html">AÇO</a>
-        <a href="#quem-somos">QUEM SOMOS</a>
-        <a href="#obras">OBRAS</a>
-        <a href="#regioes">REGIÕES</a>
-        <a href="#contato">CONTATO</a>
-      </nav>
-    </div>
-    <div class="footer-bot">
-      <span>©2025 BM ESTRUTURAL — Todos os direitos reservados · contato@estruturalse.com.br · (19) 3878-2233</span>
-      <span class="badge-y">LOUVEIRA · SP</span>
-    </div>
-  </div>
-</footer>
-
-<script src="scripts/app.js"></script>
-</body>
-</html>
+<?php include __DIR__ . '/includes/footer.php'; ?>

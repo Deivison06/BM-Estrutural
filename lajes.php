@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lajes Treliçadas | BM Estrutural — Louveira SP</title>
-<meta name="description" content="Lajes treliçadas de fabricação própria: unidirecional e bidirecional, painel treliçado, Laje Fácil, cortina de contenção e telas soldadas. Qualidade certificada para pequenos e grandes vãos — BM Estrutural, Louveira SP.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Expanded:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/style.css">
+<?php
+$active = 'lajes';
+$title  = 'Lajes Treliçadas | BM Estrutural — Louveira SP';
+$desc   = 'Lajes treliçadas de fabricação própria: unidirecional e bidirecional, painel treliçado, Laje Fácil, cortina de contenção e telas soldadas. Qualidade certificada para pequenos e grandes vãos — BM Estrutural, Louveira SP.';
+$cta_href = 'https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes';
+ob_start(); ?>
 <style>
 /* ============================================================
    CARROSSEL 3D COVER FLOW — seção #porque (escopo desta página)
@@ -86,46 +81,11 @@
   .wc-arrow{width:46px;height:46px;font-size:18px}
 }
 </style>
-</head>
-<body>
-
-<!-- ============================ HEADER ============================ -->
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="BM Estrutural">
-      <img src="https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8172524~mv2.png/v1/fill/w_350,h_192,al_c,q_85,enc_avif,quality_auto/LOGO%20SITE_SEM_FUNDO.png" alt="BM ESTRUTURAL">
-    </a>
-    <nav class="nav" id="nav">
-      <a href="index.html">INÍCIO</a>
-      <a href="lajes.html" class="active">LAJES</a>
-      <a href="aco.html">AÇO</a>
-      <a href="index.html#quem-somos">QUEM SOMOS</a>
-      <a href="index.html#obras">OBRAS</a>
-      <a href="index.html#regioes">REGIÕES</a>
-      <a href="index.html#contato">CONTATO</a>
-    </nav>
-    <a class="header-cta" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<!-- mobile nav -->
-<div class="mnav" id="mnav">
-  <button class="mclose" id="mclose" aria-label="Fechar">&times;</button>
-  <a href="index.html">INÍCIO</a>
-  <a href="lajes.html">LAJES</a>
-  <a href="aco.html">AÇO</a>
-  <a href="index.html#quem-somos">QUEM SOMOS</a>
-  <a href="index.html#obras">OBRAS</a>
-  <a href="index.html#regioes">REGIÕES</a>
-  <a href="index.html#contato">CONTATO</a>
-  <a class="cta-line" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Solicitar Orçamento &rarr;</a>
-</div>
-
+<?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
 <!-- ============================ HERO ============================ -->
 <section class="page-hero" id="hero">
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">Início</a> / <span>Lajes</span></div>
+    <div class="crumbs"><a href="/">Início</a> / <span>Lajes</span></div>
     <span class="badge-tag">Fabricação própria · 25 anos</span>
     <h1>LAJES <span class="hl">TRELIÇADAS</span></h1>
     <p class="lead">Fabricação própria. Qualidade certificada. Soluções para pequenos e grandes vãos.</p>
@@ -345,30 +305,6 @@
     <span class="cta-phone">(19) 3878-2233</span>
   </div>
 </section>
-
-<!-- ============================ FOOTER ============================ -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <img src="https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8172524~mv2.png/v1/fill/w_350,h_192,al_c,q_85,enc_avif,quality_auto/LOGO%20SITE_SEM_FUNDO.png" alt="BM ESTRUTURAL">
-      <nav class="footer-nav">
-        <a href="index.html">INÍCIO</a>
-        <a href="lajes.html">LAJES</a>
-        <a href="aco.html">AÇO</a>
-        <a href="index.html#quem-somos">QUEM SOMOS</a>
-        <a href="index.html#obras">OBRAS</a>
-        <a href="index.html#regioes">REGIÕES</a>
-        <a href="index.html#contato">CONTATO</a>
-      </nav>
-    </div>
-    <div class="footer-bot">
-      <span>©2025 BM ESTRUTURAL — Todos os direitos reservados · contato@estruturalse.com.br · (19) 3878-2233</span>
-      <span class="badge-y">LOUVEIRA · SP</span>
-    </div>
-  </div>
-</footer>
-
-<script src="scripts/app.js"></script>
 <script>
 /* ============================================================
    Carrossel 3D cover flow (#porque) — JavaScript puro
@@ -481,5 +417,5 @@
   start();
 })();
 </script>
-</body>
-</html>
+
+<?php include __DIR__ . '/includes/footer.php'; ?>
