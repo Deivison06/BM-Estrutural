@@ -26,7 +26,7 @@ $bm_logo = 'https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8
       </nav>
     </div>
     <div class="footer-bot">
-      <span>©2025 BM ESTRUTURAL — Todos os direitos reservados · contato@estruturalse.com.br · (19) 3878-2233</span>
+      <span>©2025 BM ESTRUTURAL — Todos os direitos reservados · contato@bmestrutural.com.br · (19) 3878-2233</span>
       <span class="badge-y">LOUVEIRA · SP</span>
     </div>
   </div>

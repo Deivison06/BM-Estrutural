@@ -3,18 +3,81 @@ $active = 'aco';
 $title  = 'Aço para Construção Civil | BM Estrutural — Representante Morandin';
 $desc   = 'Aço para construção civil com a BM Estrutural, representante exclusivo Morandin: vergalhões CA-50, fio CA-60, telas soldadas, arames, pregos, barras de transferência e aço cortado e dobrado, entregues na sua obra.';
 $cta_href = 'https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+A%C3%A7o+para+constru%C3%A7%C3%A3o';
-include __DIR__ . '/includes/header.php';
-?>
-<!-- ============================ HERO ============================ -->
-<section class="page-hero" id="hero">
+ob_start(); ?>
+<style>
+/* ============================================================
+   PÁGINA AÇO — refinamentos visuais (CSS escopado nesta página)
+   Mobile-first: estilos base p/ celular, min-width p/ desktop.
+   ============================================================ */
+
+/* ---- moldura de imagem do hero ---- */
+.aco-img{
+  position:relative;display:block;width:100%;
+  border-radius:var(--r-lg,26px);overflow:hidden;
+  background:var(--navy-700);
+  box-shadow:var(--sh-md,0 20px 44px -22px rgba(6,34,63,.38));
+}
+.aco-img::after{               /* traço dourado sutil + profundidade */
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  box-shadow:inset 0 0 0 1px rgba(237,205,31,.22);
+  background:linear-gradient(180deg,transparent 58%,rgba(4,24,46,.30));
+}
+.aco-img img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ---- HERO: texto + imagem (empilha no mobile) ---- */
+.hero-aco .wrap{display:grid;gap:clamp(28px,5vw,56px);align-items:center}
+.hero-aco .hero-copy{display:flex;flex-direction:column;gap:18px;min-width:0}
+.hero-aco .hero-media{aspect-ratio:5/4}
+/* título dimensionado p/ caber na coluna e não invadir a imagem */
+.hero-aco h1{font-size:clamp(32px,5vw,62px);overflow-wrap:break-word;hyphens:none}
+@media (min-width:900px){
+  .hero-aco .wrap{grid-template-columns:1.1fr .9fr}
+}
+
+/* ---- TABELAS lado a lado no desktop (vira "ficha técnica") ---- */
+.aco-tables{display:grid;gap:clamp(18px,2.5vw,26px)}
+.aco-tables .tbl-block{margin-top:0}
+@media (min-width:768px){
+  .aco-tables{grid-template-columns:1fr 1fr;align-items:start}
+}
+
+/* ---- polimento das tabelas ---- */
+.tbl{font-variant-numeric:tabular-nums}
+.tbl tbody tr:nth-child(even) td{background:rgba(255,255,255,.028)}
+.tbl tbody tr:last-child td{border-bottom:0}
+
+/* ---- "Outros Produtos": ícone em medalhão ---- */
+.mini-card{align-items:flex-start}
+.mini-card .ic{
+  width:54px;height:54px;display:grid;place-items:center;
+  border-radius:14px;background:rgba(237,205,31,.12);
+  border:1px solid rgba(237,205,31,.28);color:var(--yellow);
+}
+.mini-card .ic svg{width:26px;height:26px}
+
+/* ---- banner de imagem no bloco AÇO CORTADO E DOBRADO ---- */
+.cd-media{aspect-ratio:16/6;margin-bottom:clamp(22px,3vw,32px);position:relative;z-index:2}
+@media (max-width:560px){ .cd-media{aspect-ratio:4/3} }
+</style>
+<?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
+
+<!-- ============================ HERO (texto + imagem) ============================ -->
+<section class="page-hero hero-aco" id="hero">
   <div class="wrap">
-    <div class="crumbs"><a href="/">Início</a> / <span>Aço</span></div>
-    <span class="badge-tag">Representante Exclusivo Morandin</span>
-    <h1>AÇO PARA <span class="hl">CONSTRUÇÃO CIVIL</span></h1>
-    <p class="lead">Vergalhões, telas soldadas e aço cortado e dobrado — entregues na sua obra com qualidade Morandin.</p>
-    <div class="hero-actions">
-      <a class="btn-solid" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+A%C3%A7o+para+constru%C3%A7%C3%A3o" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
-      <a class="btn-ghost" href="#cortado-dobrado">Aço Cortado e Dobrado</a>
+    <div class="hero-copy">
+      <div class="crumbs"><a href="/">Início</a> / <span>Aço</span></div>
+      <span class="badge-tag">Representante Exclusivo Morandin</span>
+      <h1>AÇO PARA <span class="hl">CONSTRUÇÃO CIVIL</span></h1>
+      <p class="lead">Vergalhões, telas soldadas e aço cortado e dobrado — entregues na sua obra com qualidade Morandin.</p>
+      <div class="hero-actions">
+        <a class="btn-solid" href="<?= $cta_href ?>" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
+        <a class="btn-ghost" href="#cortado-dobrado">Aço Cortado e Dobrado</a>
+      </div>
+    </div>
+    <!-- IMAGEM HERO — sugestão: vergalhões/bobinas de aço empilhados (Unsplash: "steel rebar" / "rebar stack") -->
+    <div class="aco-img hero-media">
+      <img src="./assets/img/rolo-aco.jpg"
+           alt="Vergalhões e bobinas de aço empilhados em estoque" fetchpriority="high" decoding="async">
     </div>
   </div>
 </section>
@@ -24,13 +87,13 @@ include __DIR__ . '/includes/header.php';
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>01</b> / PRODUTOS</span>
         <h2 class="sec-title">VERGALHÃO E FIO DE AÇO</h2>
       </div>
       <div class="sec-rule"></div>
     </div>
     <p class="sec-intro">Barras de 12 metros com alta aderência ao concreto, certificadas e prontas para uso. O vergalhão CA-50 e o fio CA-60 garantem a resistência exigida em fundações, pilares, vigas e lajes.</p>
 
+    <div class="aco-tables">
     <div class="tbl-block reveal">
       <div class="tbl-cap">Vergalhão CA-50 (12 m)</div>
       <div class="tbl-wrap">
@@ -66,6 +129,7 @@ include __DIR__ . '/includes/header.php';
         </table>
       </div>
     </div>
+    </div>
   </div>
 </section>
 
@@ -74,13 +138,13 @@ include __DIR__ . '/includes/header.php';
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>02</b> / PRODUTOS</span>
         <h2 class="sec-title">TELAS SOLDADAS</h2>
       </div>
       <div class="sec-rule"></div>
     </div>
     <p class="sec-intro">Produzidas com tecnologia de ponta em aço CA-60, são ideais para lajes, calçadas e estruturas que exigem precisão e durabilidade. Reduzem fissuras e trazem agilidade na montagem.</p>
 
+    <div class="aco-tables">
     <div class="tbl-block reveal">
       <div class="tbl-cap">Tela Soldada 2,00 × 3,00 m</div>
       <div class="tbl-wrap">
@@ -114,6 +178,7 @@ include __DIR__ . '/includes/header.php';
         </table>
       </div>
     </div>
+    </div>
   </div>
 </section>
 
@@ -122,7 +187,6 @@ include __DIR__ . '/includes/header.php';
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>03</b> / PRODUTOS</span>
         <h2 class="sec-title">OUTROS PRODUTOS</h2>
       </div>
       <div class="sec-rule"></div>
@@ -153,6 +217,11 @@ include __DIR__ . '/includes/header.php';
   <div class="wrap">
     <div class="cd-block reveal">
       <div class="cd-inner">
+        <!-- BANNER — sugestão: armação de aço cortada e dobrada pronta no canteiro / pátio Morandin (Unsplash: "rebar bending" / "construction steel yard") -->
+        <div class="aco-img cd-media">
+          <img src="./assets/img/aco-cortado.jpg"
+               alt="Armação de aço cortada e dobrada pronta para montagem na obra" loading="lazy" decoding="async">
+        </div>
         <span class="badge-tag ghost">Maior valor agregado</span>
         <h3>AÇO <span class="hl">CORTADO E DOBRADO</span></h3>
         <p class="cd-sub">A solução definitiva para ganhar produtividade e eliminar desperdícios no seu canteiro de obras.</p>
@@ -202,7 +271,6 @@ include __DIR__ . '/includes/header.php';
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>04</b> / DIFERENCIAIS</span>
         <h2 class="sec-title">POR QUE MORANDIN</h2>
       </div>
       <div class="sec-rule"></div>

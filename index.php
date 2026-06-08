@@ -371,7 +371,7 @@ ob_start(); ?>
           <p>Estrada das Abelhas, 445<br>
           Bairro Ponte Preta - Louveira - SP<br><br>
           Cep 13291-258<br>
-          E-mail: <span class="phone">contato@estruturalse.com.br</span><br>
+          E-mail: <span class="phone">contato@bmestrutural.com.br</span><br>
           Tel fixo: <span class="phone">(19) 3878-2233</span><br>
           Zap <span class="phone">(19) 3878-2233</span></p>
         </div>

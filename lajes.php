@@ -107,7 +107,6 @@ ob_start(); ?>
         <span class="pd-meta">LAJE TRELIÇADA</span>
       </div>
       <div class="pd-copy">
-        <span class="pd-idx">/01</span>
         <h3>Laje Treliçada Unidirecional e Bidirecional</h3>
         <p class="pd-text">Sistema pré-fabricado com vigotas treliçadas de concreto armado e enchimento em EPS ou lajotas cerâmicas. Distribui as cargas em uma ou duas direções, adaptando-se a obras de todos os portes — residenciais, comerciais e industriais — com agilidade de montagem e alto desempenho estrutural.</p>
         <div class="feat-list">
@@ -130,7 +129,6 @@ ob_start(); ?>
         <span class="pd-meta">PAINEL TRELIÇADO</span>
       </div>
       <div class="pd-copy">
-        <span class="pd-idx">/02</span>
         <h3>Laje Painel Treliçado (Uni e Bidirecional)</h3>
         <p class="pd-text">Armação treliçada sobre base de concreto, podendo receber EPS. O próprio painel atua como fôrma — fôrma zero, dispensando compensados e tábuas — e entrega acabamento liso na face inferior, pronto para gesso ou pintura. Disponível em painéis de 25 cm ou 1,10 m, podendo ficar aparente.</p>
         <div class="feat-list">
@@ -155,7 +153,6 @@ ob_start(); ?>
       </div>
       <div class="pd-copy">
         <span class="badge-novidade">Novidade</span>
-        <span class="pd-idx">/03</span>
         <h3>Laje Fácil</h3>
         <p class="pd-text">Vigotas mais leves e sistema de encaixe intuitivo, para uma instalação ágil e segura — sem necessidade de equipamentos pesados. Ideal para obras residenciais e comerciais, inclusive em grandes vãos, com a praticidade que acelera o canteiro.</p>
         <div class="feat-list">
@@ -178,7 +175,6 @@ ob_start(); ?>
         <span class="pd-meta">CORTINA DE CONTENÇÃO</span>
       </div>
       <div class="pd-copy">
-        <span class="pd-idx">/04</span>
         <h3>Cortina de Contenção — Painel Treliçado Duplo</h3>
         <p class="pd-text">Solução estrutural e geotécnica para estabilização de taludes e contenção de solo. O painel duplo funciona como fôrma faceada pré-pronta, encaixada nos perfis metálicos cravados — agilidade extrema na montagem, eliminação das fôrmas de madeira e alta resistência aos empuxos de terra. Ideal para subsolos e garagens.</p>
         <div class="feat-list">
@@ -197,7 +193,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>02</b> / COMPLEMENTO</span>
         <h2 class="sec-title">TELAS SOLDADAS</h2>
       </div>
       <div class="sec-rule"></div>
@@ -249,7 +244,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>03</b> / DIFERENCIAIS</span>
         <h2 class="sec-title">POR QUE A BM ESTRUTURAL</h2>
       </div>
       <div class="sec-rule"></div>
