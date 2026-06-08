@@ -4,7 +4,7 @@
    ============================================================ */
 $isHome = (($active ?? '') === 'home');
 if (!function_exists('bm_sref')) {
-  function bm_sref($isHome, $anchor) {
+  function bm_sref(bool $isHome, string $anchor): string {
     return $isHome ? '#' . $anchor : '/#' . $anchor;
   }
 }
@@ -14,7 +14,7 @@ $bm_logo = 'https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
-      <img src="<?= $bm_logo ?>" alt="BM ESTRUTURAL">
+      <img loading="lazy" decoding="async" src="<?= $bm_logo ?>" alt="BM ESTRUTURAL">
       <nav class="footer-nav">
         <a href="/">INÍCIO</a>
         <a href="/lajes">LAJES</a>
@@ -32,6 +32,6 @@ $bm_logo = 'https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8
   </div>
 </footer>
 
-<script src="/scripts/app.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>

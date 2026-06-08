@@ -842,3 +842,68 @@ a,button,.prod,.obra,.sol-card,.mini-card,.feat,.stat,.why-card{transition-timin
 @media (max-width:880px){
   .prod-section{min-height:auto}
 }
+
+/* ============================================================
+   ===============  OTIMIZAÇÃO MOBILE  ========================
+   Ajustes focados em telas pequenas (cascata mantida).
+   Tudo escopado em max-width — desktop permanece intacto.
+   ============================================================ */
+
+/* anti-overflow horizontal e mídia fluida */
+html,body{max-width:100%}
+img,video,iframe,svg,table{max-width:100%}
+
+/* ---------------- TABLET / abaixo (<=768px) ---------------- */
+@media (max-width:768px){
+  /* deixa filhos de flex/grid encolherem (evita estouro por palavra/tabela longa) */
+  .header-inner,.slide-actions,.hero-actions,.obras-tag,.cd-foot,.footer-top,.footer-bot,.contact-grid,.about-grid,.prod-detail{min-width:0}
+  .header-inner > *{min-width:0}
+
+  /* alvo de toque do menu hambúrguer >= 44px */
+  .burger{min-width:44px;min-height:44px;align-items:center;justify-content:center}
+
+  /* rolagem horizontal suave nas tabelas de produto */
+  .tbl-wrap{-webkit-overflow-scrolling:touch}
+
+  /* área de toque maior nos dots do carrossel, sem mudar o visual */
+  .wc-dot{position:relative}
+  .wc-dot::after{content:"";position:absolute;inset:-14px}
+
+  /* mapa de regiões um pouco menor */
+  .reg-map{min-height:300px}
+}
+
+/* ---------------- CELULAR (<=560px) ---------------- */
+@media (max-width:560px){
+  /* respiro vertical mais enxuto entre seções */
+  .sec{padding-block:clamp(52px,13vw,80px)}
+  .page-hero{padding-block:clamp(56px,16vw,96px)}
+
+  /* CTAs principais ocupam a largura toda e centralizam (toque fácil) */
+  .hero-actions,.slide-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn-solid,.hero-actions .btn-ghost,
+  .slide-actions .btn-solid,.slide-actions .btn-ghost{width:100%;justify-content:center}
+  .cta-final .btn-big{width:100%;justify-content:center}
+  .obras-tag .btn-solid{width:100%;justify-content:center}
+  .pd-cta{width:100%;justify-content:center}
+  .cd-foot{flex-direction:column;align-items:stretch}
+  .cd-foot .cd-stamp{justify-content:center;text-align:center}
+
+  /* logo um toque menor no header */
+  .brand img{height:42px}
+
+  /* blocos densos com menos padding interno */
+  .cd-block{padding:26px 20px}
+  .prod-aco-body{padding:26px 22px}
+  .info-block p{font-size:14.5px}
+
+  /* títulos de seção sem quebrar feio */
+  .sec-title{font-size:clamp(28px,8.5vw,40px)}
+}
+
+/* ---------------- TELAS MUITO ESTREITAS (<=400px) ---------------- */
+@media (max-width:400px){
+  .tbl thead th,.tbl tbody td{padding:11px 12px;font-size:13.5px}
+  .tbl{min-width:340px}
+  .why-carousel .why-card{padding:26px 22px}
+}

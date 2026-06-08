@@ -103,7 +103,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail reveal">
       <div class="pd-media ticks">
-        <img src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional">
+        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional">
         <span class="pd-meta">LAJE TRELIÇADA</span>
       </div>
       <div class="pd-copy">
@@ -111,9 +111,9 @@ ob_start(); ?>
         <h3>Laje Treliçada Unidirecional e Bidirecional</h3>
         <p class="pd-text">Sistema pré-fabricado com vigotas treliçadas de concreto armado e enchimento em EPS ou lajotas cerâmicas. Distribui as cargas em uma ou duas direções, adaptando-se a obras de todos os portes — residenciais, comerciais e industriais — com agilidade de montagem e alto desempenho estrutural.</p>
         <div class="feat-list">
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Agilidade na execução</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></span>Alto desempenho estrutural</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg></span>Versátil (uni e bidirecional)</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Agilidade na execução</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></span>Alto desempenho estrutural</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg></span>Versátil (uni e bidirecional)</span>
         </div>
         <a class="pd-cta" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Quero um orçamento <span>&rarr;</span></a>
       </div>
@@ -126,7 +126,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail flip reveal">
       <div class="pd-media ticks">
-        <img src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Laje painel treliçado">
+        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Laje painel treliçado">
         <span class="pd-meta">PAINEL TRELIÇADO</span>
       </div>
       <div class="pd-copy">
@@ -134,10 +134,10 @@ ob_start(); ?>
         <h3>Laje Painel Treliçado (Uni e Bidirecional)</h3>
         <p class="pd-text">Armação treliçada sobre base de concreto, podendo receber EPS. O próprio painel atua como fôrma — fôrma zero, dispensando compensados e tábuas — e entrega acabamento liso na face inferior, pronto para gesso ou pintura. Disponível em painéis de 25 cm ou 1,10 m, podendo ficar aparente.</p>
         <div class="feat-list">
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M5 5v14h14"/></svg></span>Sem fôrma de madeira</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>Acabamento uniforme</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 13h7v7h-7z"/></svg></span>Encaixe perfeito</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Montagem rápida</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M5 5v14h14"/></svg></span>Sem fôrma de madeira</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>Acabamento uniforme</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 13h7v7h-7z"/></svg></span>Encaixe perfeito</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Montagem rápida</span>
         </div>
         <a class="pd-cta" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Quero um orçamento <span>&rarr;</span></a>
       </div>
@@ -150,7 +150,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail reveal">
       <div class="pd-media ticks">
-        <img src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil">
+        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil">
         <span class="pd-meta">LAJE FÁCIL</span>
       </div>
       <div class="pd-copy">
@@ -159,9 +159,9 @@ ob_start(); ?>
         <h3>Laje Fácil</h3>
         <p class="pd-text">Vigotas mais leves e sistema de encaixe intuitivo, para uma instalação ágil e segura — sem necessidade de equipamentos pesados. Ideal para obras residenciais e comerciais, inclusive em grandes vãos, com a praticidade que acelera o canteiro.</p>
         <div class="feat-list">
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Leve</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Prática</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Sem equipamentos pesados</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Leve</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Prática</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Sem equipamentos pesados</span>
         </div>
         <a class="pd-cta" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Quero um orçamento <span>&rarr;</span></a>
       </div>
@@ -174,7 +174,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail flip reveal">
       <div class="pd-media ticks">
-        <img src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Cortina de contenção — painel treliçado duplo">
+        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Cortina de contenção — painel treliçado duplo">
         <span class="pd-meta">CORTINA DE CONTENÇÃO</span>
       </div>
       <div class="pd-copy">
@@ -182,9 +182,9 @@ ob_start(); ?>
         <h3>Cortina de Contenção — Painel Treliçado Duplo</h3>
         <p class="pd-text">Solução estrutural e geotécnica para estabilização de taludes e contenção de solo. O painel duplo funciona como fôrma faceada pré-pronta, encaixada nos perfis metálicos cravados — agilidade extrema na montagem, eliminação das fôrmas de madeira e alta resistência aos empuxos de terra. Ideal para subsolos e garagens.</p>
         <div class="feat-list">
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Contenção rápida</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M5 5v14h14"/></svg></span>Sem madeira</span>
-          <span class="feat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></span>Alta resistência</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Contenção rápida</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M5 5v14h14"/></svg></span>Sem madeira</span>
+          <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></span>Alta resistência</span>
         </div>
         <a class="pd-cta" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Quero um orçamento <span>&rarr;</span></a>
       </div>
@@ -261,27 +261,27 @@ ob_start(); ?>
 
       <div class="wc-stage" id="wcStage">
         <div class="why-card">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
           <h4>25 anos de experiência</h4>
           <p>Tradição e know-how técnico acumulados em milhares de obras pelo estado de São Paulo.</p>
         </div>
         <div class="why-card">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0z"/><path d="M4 21v-1a6 6 0 0112 0v1"/></svg></span>
+          <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0z"/><path d="M4 21v-1a6 6 0 0112 0v1"/></svg></span>
           <h4>Engenheiros experientes</h4>
           <p>Equipe técnica que dimensiona a solução estrutural ideal para cada projeto e vão.</p>
         </div>
         <div class="why-card">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
           <h4>Qualidade certificada</h4>
           <p>Matérias-primas certificadas e produção conforme as normas técnicas vigentes.</p>
         </div>
         <div class="why-card">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
+          <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
           <h4>Atendimento diferenciado</h4>
           <p>Suporte técnico próximo, do orçamento à entrega, para tirar dúvidas em cada etapa.</p>
         </div>
         <div class="why-card">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5h11l3 5M5 13h14v4H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg></span>
+          <span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5h11l3 5M5 13h14v4H5z"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg></span>
           <h4>Entrega em todo SP</h4>
           <p>Logística própria com foco em Jundiaí e Campinas, atendendo todo o estado.</p>
         </div>
@@ -299,7 +299,7 @@ ob_start(); ?>
     <h2>Pronto para acelerar <span class="hl">sua obra?</span></h2>
     <p>Fale com nossa equipe e receba um orçamento de lajes sob medida para o seu projeto.</p>
     <a class="btn-big" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.107zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.107zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
       Chamar no WhatsApp
     </a>
     <span class="cta-phone">(19) 3878-2233</span>

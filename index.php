@@ -163,7 +163,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>01</b> / SEÇÃO</span>
         <h2 class="sec-title">PRODUTOS</h2>
       </div>
       <div class="sec-rule"></div>
@@ -172,7 +171,7 @@ ob_start(); ?>
     <div class="prod-grid">
       <article class="prod reveal">
         <div class="prod-img"><span class="prod-num">01</span>
-          <img src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional"></div>
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional"></div>
         <div class="prod-body">
           <h3>Laje Treliçada</h3>
           <p>Vigotas treliçadas com enchimento em EPS ou cerâmica — excelente opção para obras de pequeno e grande porte.</p>
@@ -182,7 +181,7 @@ ob_start(); ?>
 
       <article class="prod reveal d1">
         <div class="prod-img"><span class="prod-num">02</span>
-          <img src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Painel treliçado"></div>
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Painel treliçado"></div>
         <div class="prod-body">
           <h3>Painel Treliçado</h3>
           <p>Fôrma zero e acabamento liso na face inferior, em painéis de 25 cm ou 1,10 m — pode ficar aparente.</p>
@@ -192,7 +191,7 @@ ob_start(); ?>
 
       <article class="prod reveal d2">
         <div class="prod-img"><span class="prod-num">03</span>
-          <img src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil"></div>
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil"></div>
         <div class="prod-body">
           <h3>Laje Fácil</h3>
           <p>Leve, prática e com encaixe intuitivo: instalação ágil e segura, sem equipamentos pesados.</p>
@@ -202,7 +201,7 @@ ob_start(); ?>
 
       <article class="prod reveal d3">
         <div class="prod-img"><span class="prod-num">04</span>
-          <img src="https://static.wixstatic.com/media/e9aa01_6ea87fe0ab0b43cab3aceae7ac2d3e5d~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/team-image4.jpg" alt="Telas soldadas"></div>
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_6ea87fe0ab0b43cab3aceae7ac2d3e5d~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/team-image4.jpg" alt="Telas soldadas"></div>
         <div class="prod-body">
           <h3>Telas Soldadas</h3>
           <p>Em aço CA-60, distribuem as cargas sobre as lajes e reduzem fissuras em calçadas e estruturas.</p>
@@ -215,7 +214,7 @@ ob_start(); ?>
     <article class="prod-aco reveal">
       <span class="prod-badge">NOVO</span>
       <div class="prod-aco-media ticks">
-        <img src="./vergalhoes_CA50_e_CA.webp" alt="Aço para construção civil — vergalhões e telas soldadas">
+        <img loading="lazy" decoding="async" src="/assets/img/vergalhoes_CA50_e_CA.webp" alt="Aço para construção civil — vergalhões e telas soldadas">
       </div>
       <div class="prod-aco-body">
         <span class="prod-aco-idx">05 / NOVA VERTICAL</span>
@@ -232,7 +231,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>02</b> / SEÇÃO</span>
         <h2 class="sec-title">QUEM SOMOS</h2>
       </div>
       <div class="sec-rule"></div>
@@ -249,7 +247,7 @@ ob_start(); ?>
         </div>
       </div>
       <div class="about-media reveal d2 ticks">
-        <img src="https://static.wixstatic.com/media/e9aa01_0f21dc1412ea4eb7962c4f82598c3d0c~mv2.jpg/v1/fill/w_1100,h_825,al_c,q_85,enc_avif,quality_auto/about-image_edited.jpg" alt="Sede da BM Estrutural em Louveira — SP">
+        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_0f21dc1412ea4eb7962c4f82598c3d0c~mv2.jpg/v1/fill/w_1100,h_825,al_c,q_85,enc_avif,quality_auto/about-image_edited.jpg" alt="Sede da BM Estrutural em Louveira — SP">
         <span class="badge">SEDE · LOUVEIRA — SP</span>
       </div>
     </div>
@@ -261,7 +259,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>03</b> / SEÇÃO</span>
         <h2 class="sec-title">OBRAS</h2>
       </div>
       <div class="sec-rule"></div>
@@ -270,7 +267,7 @@ ob_start(); ?>
     <div class="obras-grid">
       <article class="obra reveal">
         <div class="obra-img">
-          <img src="https://static.wixstatic.com/media/e9aa01_ff613288d5854aed8b9f62fb353d37e6~mv2.png/v1/crop/x_7,y_0,w_595,h_733/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/1.png" alt="Inovar">
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_ff613288d5854aed8b9f62fb353d37e6~mv2.png/v1/crop/x_7,y_0,w_595,h_733/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/1.png" alt="Inovar">
         </div>
         <div class="obra-body">
           <span class="n">/01</span>
@@ -282,7 +279,7 @@ ob_start(); ?>
 
       <article class="obra reveal d1">
         <div class="obra-img">
-          <img src="https://static.wixstatic.com/media/e9aa01_f83e9d99d41247e49c2555263e02933e~mv2.png/v1/crop/x_121,y_0,w_693,h_854/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/2.png" alt="Renovar">
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_f83e9d99d41247e49c2555263e02933e~mv2.png/v1/crop/x_121,y_0,w_693,h_854/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/2.png" alt="Renovar">
         </div>
         <div class="obra-body">
           <span class="n">/02</span>
@@ -294,7 +291,7 @@ ob_start(); ?>
 
       <article class="obra reveal d2">
         <div class="obra-img">
-          <img src="https://static.wixstatic.com/media/e9aa01_ebe5f9f6d71148a39f2510c1b531b08d~mv2.png/v1/crop/x_57,y_0,w_689,h_849/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/3.png" alt="Evoluir">
+          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_ebe5f9f6d71148a39f2510c1b531b08d~mv2.png/v1/crop/x_57,y_0,w_689,h_849/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/3.png" alt="Evoluir">
         </div>
         <div class="obra-body">
           <span class="n">/03</span>
@@ -317,7 +314,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>04</b> / SEÇÃO</span>
         <h2 class="sec-title">REGIÕES ATENDIDAS</h2>
       </div>
       <div class="sec-rule"></div>
@@ -350,7 +346,6 @@ ob_start(); ?>
   <div class="wrap">
     <div class="sec-head">
       <div class="left">
-        <span class="sec-idx"><b>05</b> / SEÇÃO</span>
         <h2 class="sec-title">CONTATO</h2>
       </div>
       <div class="sec-rule"></div>
@@ -362,7 +357,7 @@ ob_start(); ?>
           <h3>Informações</h3>
           <p>Para obter informações, esclarecer dúvidas ou enviar comentários, entre em contato pelo WhatsApp <span class="phone">(19) 3878-2233</span>. Ou preencha e envie o formulário abaixo:</p>
           <a class="whats" href="https://wa.me/551938782233" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.107zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.107zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             Chamar no WhatsApp
           </a>
         </div>
@@ -385,10 +380,10 @@ ob_start(); ?>
 
         <div class="social reveal d2">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="FACEBOOK">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.08 24 18.09 24 12.07z"/></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.08 24 18.09 24 12.07z"/></svg>
           </a>
           <a href="https://www.instagram.com/bmestrutural" target="_blank" rel="noopener" aria-label="INSTAGRAM @bmestrutural">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4zm6.4-10.4a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4zm6.4-10.4a1.44 1.44 0 11-1.44-1.44 1.44 1.44 0 011.44 1.44z"/></svg>
           </a>
         </div>
       </div>
