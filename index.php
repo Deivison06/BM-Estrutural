@@ -239,7 +239,7 @@ ob_start(); ?>
     <div class="about-grid" style="align-items:start">
       <div class="about-copy">
         <p class="lead reveal">A <b>BM Estrutural Soluções em Engenharia</b> é uma empresa com mais de 25 anos de experiência, especializada na fabricação de lajes treliçadas e, como <b>representante exclusivo Morandin</b>, no fornecimento de aço para construção civil. Com engenheiros experientes e rigor técnico, atuamos em todo o estado de São Paulo — com foco nas regiões de Jundiaí e Campinas — entregando soluções estruturais para pequenos e grandes vãos com qualidade, segurança e agilidade em cada projeto.</p>
-        <div class="stats reveal d1" style="grid-template-columns:repeat(4,1fr)">
+        <div class="stats reveal d1">
           <div class="stat"><span class="big">25</span><span class="lbl">Anos de Experiência</span></div>
           <div class="stat"><div class="mk"></div><span class="lbl">Valor Justo para cada Obra</span></div>
           <div class="stat"><div class="mk"></div><span class="lbl">Material ideal para cada Projeto</span></div>
@@ -328,10 +328,14 @@ ob_start(); ?>
           Louveira — SP
         </div>
         <div class="reg-chips">
-          <span class="reg-chip">São Paulo</span>
-          <span class="reg-chip">Jundiaí</span>
-          <span class="reg-chip">Campinas</span>
           <span class="reg-chip">Louveira</span>
+          <span class="reg-chip">Vinhedo</span>
+          <span class="reg-chip">Valinhos</span>
+          <span class="reg-chip">Campinas</span>
+          <span class="reg-chip">Itatiba</span>
+          <span class="reg-chip">Jundiaí</span>
+          <span class="reg-chip">Itupeva</span>
+          <span class="reg-chip">São Paulo</span>
         </div>
       </div>
       <div class="reg-map">

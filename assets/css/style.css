@@ -276,7 +276,11 @@ section{position:relative}
 .about-copy{display:flex;flex-direction:column;gap:28px}
 .about-copy .lead{font-size:clamp(16px,1.7vw,19px);line-height:1.7;color:#27313c}
 .about-copy .lead b{color:var(--navy);font-weight:700}
+/* QUEM SOMOS — stats: mobile 2x2 (base) e 4 colunas no desktop (min-width) */
 .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
+@media (min-width:768px){
+  .stats{grid-template-columns:repeat(4,1fr)}
+}
 .stat{background:var(--concrete-2);padding:22px 20px;display:flex;flex-direction:column;gap:8px;min-height:120px;justify-content:center}
 .stat .big{font-family:var(--display);font-weight:800;font-size:40px;line-height:1;color:var(--navy)}
 .stat .lbl{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.4}
@@ -421,7 +425,6 @@ section{position:relative}
 }
 @media (max-width:560px){
   .prod-grid{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr}
   .form .frow{grid-template-columns:1fr}
   .slide-title{font-size:clamp(34px,11vw,56px)}
 }
