@@ -183,7 +183,7 @@ ob_start(); ?>
 </section>
 
 <!-- ============================ OUTROS PRODUTOS ============================ -->
-<section class="sec on-navy" id="outros" style="padding-top:0">
+<section class="sec on-navy" id="outros" style="padding-top:100px">
   <div class="wrap">
     <div class="sec-head">
       <div class="left">

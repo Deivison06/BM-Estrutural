@@ -19,10 +19,10 @@
   --line:rgba(6,34,63,.14);
   --line-strong:rgba(6,34,63,.28);
   --line-light:rgba(255,255,255,.16);
-  --display:'Archivo Expanded','Archivo',system-ui,sans-serif;
-  --head:'Archivo',system-ui,sans-serif;
-  --body:'IBM Plex Sans',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --display:'Montserrat',system-ui,sans-serif;
+  --head:'Montserrat',system-ui,sans-serif;
+  --body:'Roboto',system-ui,sans-serif;
+  --mono:'Roboto Mono',ui-monospace,monospace;
   --maxw:1280px;
   --gut:clamp(20px,5vw,72px);
 }
