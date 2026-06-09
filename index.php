@@ -1,12 +1,12 @@
 <?php
 $active = 'home';
-$title  = 'BM Estrutural | Lajes e Aço para Construção Civil — Jundiaí e Campinas';
+$title  = 'BM Estrutural | Lajes e Aço para Construção Civil em Jundiaí e Campinas';
 $desc   = 'BM Estrutural Soluções em Engenharia: 25 anos fabricando lajes treliçadas e representante exclusivo Morandin de aço para construção civil. Atendimento em todo o estado de São Paulo, com foco em Jundiaí e Campinas.';
 $cta_href = 'https://wa.me/551938782233';
 ob_start(); ?>
 <style>
 /* ============================================================
-   ESTILOS DA HOME (index) — inline no head para não tocar style.css
+   ESTILOS DA HOME (index): inline no head para não tocar style.css
    ============================================================ */
 
 /* ---- HERO com vídeo full-screen ---- */
@@ -140,9 +140,9 @@ ob_start(); ?>
   ></video>
   <div class="hero-overlay"></div>
   <div class="hero-content wrap">
-    <span class="hero-badge">BM ESTRUTURAL — 25 ANOS</span>
+    <span class="hero-badge">BM ESTRUTURAL · 25 ANOS</span>
     <h1 class="hero-title">LAJES <span class="hl">TRELIÇADAS</span><br>E AÇO PARA<br>CONSTRUÇÃO CIVIL</h1>
-    <p class="hero-sub">Fabricação própria de lajes e representante exclusivo Morandin — soluções estruturais para toda a sua obra em Jundiaí, Campinas e todo o estado de São Paulo.</p>
+    <p class="hero-sub">Fabricação própria de lajes e representante exclusivo Morandin, com soluções estruturais para toda a sua obra em Jundiaí, Campinas e todo o estado de São Paulo.</p>
     <div class="hero-actions">
       <a class="btn-solid" href="#produtos">Ver Produtos <span>&rarr;</span></a>
       <a class="btn-ghost" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento</a>
@@ -174,7 +174,7 @@ ob_start(); ?>
           <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional"></div>
         <div class="prod-body">
           <h3>Laje Treliçada</h3>
-          <p>Vigotas treliçadas com enchimento em EPS ou cerâmica — excelente opção para obras de pequeno e grande porte.</p>
+          <p>Vigotas treliçadas com enchimento em EPS ou cerâmica, excelente opção para obras de pequeno e grande porte.</p>
           <a class="prod-link" href="/lajes#laje-trelicada">Saiba mais <span class="ar">&rarr;</span></a>
         </div>
       </article>
@@ -184,7 +184,7 @@ ob_start(); ?>
           <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Painel treliçado"></div>
         <div class="prod-body">
           <h3>Painel Treliçado</h3>
-          <p>Fôrma zero e acabamento liso na face inferior, em painéis de 25 cm ou 1,10 m — pode ficar aparente.</p>
+          <p>Fôrma zero e acabamento liso na face inferior, em painéis de 25 cm ou 1,10 m, pode ficar aparente.</p>
           <a class="prod-link" href="/lajes#painel-trelicado">Saiba mais <span class="ar">&rarr;</span></a>
         </div>
       </article>
@@ -214,12 +214,12 @@ ob_start(); ?>
     <article class="prod-aco reveal">
       <span class="prod-badge">NOVO</span>
       <div class="prod-aco-media ticks">
-        <img loading="lazy" decoding="async" src="/assets/img/vergalhoes_CA50_e_CA.webp" alt="Aço para construção civil — vergalhões e telas soldadas">
+        <img loading="lazy" decoding="async" src="/assets/img/vergalhoes_CA50_e_CA.webp" alt="Aço para construção civil: vergalhões e telas soldadas">
       </div>
       <div class="prod-aco-body">
         <span class="prod-aco-idx">05 / NOVA VERTICAL</span>
         <h3>AÇO para Construção Civil</h3>
-        <p>Representante exclusivo Morandin — vergalhões CA-50, telas soldadas e AÇO cortado e dobrado.</p>
+        <p>Representante exclusivo Morandin: vergalhões CA-50, telas soldadas e AÇO cortado e dobrado.</p>
         <a class="btn-solid" href="/aco">Ver Produtos <span>&rarr;</span></a>
       </div>
     </article>
@@ -238,7 +238,7 @@ ob_start(); ?>
 
     <div class="about-grid" style="align-items:start">
       <div class="about-copy">
-        <p class="lead reveal">A <b>BM Estrutural Soluções em Engenharia</b> é uma empresa com mais de 25 anos de experiência, especializada na fabricação de lajes treliçadas e, como <b>representante exclusivo Morandin</b>, no fornecimento de aço para construção civil. Com engenheiros experientes e rigor técnico, atuamos em todo o estado de São Paulo — com foco nas regiões de Jundiaí e Campinas — entregando soluções estruturais para pequenos e grandes vãos com qualidade, segurança e agilidade em cada projeto.</p>
+        <p class="lead reveal">A <b>BM Estrutural Soluções em Engenharia</b> é uma empresa com mais de 25 anos de experiência, especializada na fabricação de lajes treliçadas e, como <b>representante exclusivo Morandin</b>, no fornecimento de aço para construção civil. Com engenheiros experientes e rigor técnico, atuamos em todo o estado de São Paulo, com foco nas regiões de Jundiaí e Campinas, entregando soluções estruturais para pequenos e grandes vãos com qualidade, segurança e agilidade em cada projeto.</p>
         <div class="stats reveal d1">
           <div class="stat"><span class="big">25</span><span class="lbl">Anos de Experiência</span></div>
           <div class="stat"><div class="mk"></div><span class="lbl">Valor Justo para cada Obra</span></div>
@@ -247,8 +247,8 @@ ob_start(); ?>
         </div>
       </div>
       <div class="about-media reveal d2 ticks">
-        <img loading="lazy" decoding="async" src="./assets/img/bm-estrutural-vista-de-cima-com-logo.png" alt="Sede da BM Estrutural em Louveira — SP">
-        <span class="badge">SEDE · LOUVEIRA — SP</span>
+        <img loading="lazy" decoding="async" src="./assets/img/bm-estrutural-vista-de-cima-com-logo.png" alt="Sede da BM Estrutural em Louveira/SP">
+        <span class="badge">SEDE · LOUVEIRA/SP</span>
       </div>
     </div>
   </div>
@@ -325,7 +325,7 @@ ob_start(); ?>
         <div class="reg-coord">
           <b>MATRIZ</b> &nbsp; 23°05′S · 46°57′O<br>
           Estrada das Abelhas, 445<br>
-          Louveira — SP
+          Louveira/SP
         </div>
         <div class="reg-chips">
           <span class="reg-chip">Louveira</span>

@@ -1,12 +1,12 @@
 <?php
 $active = 'lajes';
-$title  = 'Lajes Treliçadas | BM Estrutural — Louveira SP';
-$desc   = 'Lajes treliçadas de fabricação própria: unidirecional e bidirecional, painel treliçado, Laje Fácil, cortina de contenção e telas soldadas. Qualidade certificada para pequenos e grandes vãos — BM Estrutural, Louveira SP.';
+$title  = 'Lajes Treliçadas | BM Estrutural, Louveira SP';
+$desc   = 'Lajes treliçadas de fabricação própria: unidirecional e bidirecional, painel treliçado, Laje Fácil, cortina de contenção e telas soldadas. Qualidade certificada para pequenos e grandes vãos. BM Estrutural, Louveira SP.';
 $cta_href = 'https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes';
 ob_start(); ?>
 <style>
 /* ============================================================
-   CARROSSEL 3D COVER FLOW — seção #porque (escopo desta página)
+   CARROSSEL 3D COVER FLOW: seção #porque (escopo desta página)
    Usa as variáveis já definidas no projeto (--yellow, --navy...).
    ============================================================ */
 .why-carousel{
@@ -108,7 +108,7 @@ ob_start(); ?>
       </div>
       <div class="pd-copy">
         <h3>Laje Treliçada Unidirecional e Bidirecional</h3>
-        <p class="pd-text">Sistema pré-fabricado com vigotas treliçadas de concreto armado e enchimento em EPS ou lajotas cerâmicas. Distribui as cargas em uma ou duas direções, adaptando-se a obras de todos os portes — residenciais, comerciais e industriais — com agilidade de montagem e alto desempenho estrutural.</p>
+        <p class="pd-text">Sistema pré-fabricado com vigotas treliçadas de concreto armado e enchimento em EPS ou lajotas cerâmicas. Distribui as cargas em uma ou duas direções, adaptando-se a obras de todos os portes (residenciais, comerciais e industriais) com agilidade de montagem e alto desempenho estrutural.</p>
         <div class="feat-list">
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Agilidade na execução</span>
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg></span>Alto desempenho estrutural</span>
@@ -130,7 +130,7 @@ ob_start(); ?>
       </div>
       <div class="pd-copy">
         <h3>Laje Painel Treliçado (Uni e Bidirecional)</h3>
-        <p class="pd-text">Armação treliçada sobre base de concreto, podendo receber EPS. O próprio painel atua como fôrma — fôrma zero, dispensando compensados e tábuas — e entrega acabamento liso na face inferior, pronto para gesso ou pintura. Disponível em painéis de 25 cm ou 1,10 m, podendo ficar aparente.</p>
+        <p class="pd-text">Armação treliçada sobre base de concreto, podendo receber EPS. O próprio painel atua como fôrma (fôrma zero, dispensando compensados e tábuas) e entrega acabamento liso na face inferior, pronto para gesso ou pintura. Disponível em painéis de 25 cm ou 1,10 m, podendo ficar aparente.</p>
         <div class="feat-list">
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M5 5v14h14"/></svg></span>Sem fôrma de madeira</span>
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>Acabamento uniforme</span>
@@ -154,7 +154,7 @@ ob_start(); ?>
       <div class="pd-copy">
         <span class="badge-novidade">Novidade</span>
         <h3>Laje Fácil</h3>
-        <p class="pd-text">Vigotas mais leves e sistema de encaixe intuitivo, para uma instalação ágil e segura — sem necessidade de equipamentos pesados. Ideal para obras residenciais e comerciais, inclusive em grandes vãos, com a praticidade que acelera o canteiro.</p>
+        <p class="pd-text">Vigotas mais leves e sistema de encaixe intuitivo, para uma instalação ágil e segura, sem necessidade de equipamentos pesados. Ideal para obras residenciais e comerciais, inclusive em grandes vãos, com a praticidade que acelera o canteiro.</p>
         <div class="feat-list">
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Leve</span>
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg></span>Prática</span>
@@ -171,12 +171,12 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail flip reveal">
       <div class="pd-media ticks">
-        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Cortina de contenção — painel treliçado duplo">
+        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Cortina de contenção: painel treliçado duplo">
         <span class="pd-meta">CORTINA DE CONTENÇÃO</span>
       </div>
       <div class="pd-copy">
-        <h3>Cortina de Contenção — Painel Treliçado Duplo</h3>
-        <p class="pd-text">Solução estrutural e geotécnica para estabilização de taludes e contenção de solo. O painel duplo funciona como fôrma faceada pré-pronta, encaixada nos perfis metálicos cravados — agilidade extrema na montagem, eliminação das fôrmas de madeira e alta resistência aos empuxos de terra. Ideal para subsolos e garagens.</p>
+        <h3>Cortina de Contenção: Painel Treliçado Duplo</h3>
+        <p class="pd-text">Solução estrutural e geotécnica para estabilização de taludes e contenção de solo. O painel duplo funciona como fôrma faceada pré-pronta, encaixada nos perfis metálicos cravados, com agilidade extrema na montagem, eliminação das fôrmas de madeira e alta resistência aos empuxos de terra. Ideal para subsolos e garagens.</p>
         <div class="feat-list">
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>Contenção rápida</span>
           <span class="feat"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M5 5v14h14"/></svg></span>Sem madeira</span>
@@ -197,7 +197,7 @@ ob_start(); ?>
       </div>
       <div class="sec-rule"></div>
     </div>
-    <p class="sec-intro">Produzidas com aço CA-60 e soldagem elétrica automatizada, são ideais para lajes, calçadas e estruturas — reduzem fissuras e aceleram a montagem. Disponíveis nos modelos EQ45, EQ61, EQ92 e EQ138 (2,00×3,00 m) e Q61 a Q283 (2,45×6,00 m).</p>
+    <p class="sec-intro">Produzidas com aço CA-60 e soldagem elétrica automatizada, são ideais para lajes, calçadas e estruturas, reduzem fissuras e aceleram a montagem. Disponíveis nos modelos EQ45, EQ61, EQ92 e EQ138 (2,00×3,00 m) e Q61 a Q283 (2,45×6,00 m).</p>
 
     <div class="tbl-block reveal">
       <div class="tbl-cap">Tela Soldada 2,00 × 3,00 m</div>
@@ -301,7 +301,7 @@ ob_start(); ?>
 </section>
 <script>
 /* ============================================================
-   Carrossel 3D cover flow (#porque) — JavaScript puro
+   Carrossel 3D cover flow (#porque): JavaScript puro
    ============================================================ */
 (function () {
   'use strict';

@@ -1,12 +1,12 @@
 <?php
 $active = 'aco';
-$title  = 'Aço para Construção Civil | BM Estrutural — Representante Morandin';
+$title  = 'Aço para Construção Civil | BM Estrutural, Representante Morandin';
 $desc   = 'Aço para construção civil com a BM Estrutural, representante exclusivo Morandin: vergalhões CA-50, fio CA-60, telas soldadas, arames, pregos, barras de transferência e aço cortado e dobrado, entregues na sua obra.';
 $cta_href = 'https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+A%C3%A7o+para+constru%C3%A7%C3%A3o';
 ob_start(); ?>
 <style>
 /* ============================================================
-   PÁGINA AÇO — refinamentos visuais (CSS escopado nesta página)
+   PÁGINA AÇO: refinamentos visuais (CSS escopado nesta página)
    Mobile-first: estilos base p/ celular, min-width p/ desktop.
    ============================================================ */
 
@@ -68,13 +68,13 @@ ob_start(); ?>
       <div class="crumbs"><a href="/">Início</a> / <span>Aço</span></div>
       <span class="badge-tag">Representante Exclusivo Morandin</span>
       <h1>AÇO PARA <span class="hl">CONSTRUÇÃO CIVIL</span></h1>
-      <p class="lead">Vergalhões, telas soldadas e aço cortado e dobrado — entregues na sua obra com qualidade Morandin.</p>
+      <p class="lead">Vergalhões, telas soldadas e aço cortado e dobrado, entregues na sua obra com qualidade Morandin.</p>
       <div class="hero-actions">
         <a class="btn-solid" href="<?= $cta_href ?>" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
         <a class="btn-ghost" href="#cortado-dobrado">Aço Cortado e Dobrado</a>
       </div>
     </div>
-    <!-- IMAGEM HERO — sugestão: vergalhões/bobinas de aço empilhados (Unsplash: "steel rebar" / "rebar stack") -->
+    <!-- IMAGEM HERO: sugestão de vergalhões/bobinas de aço empilhados (Unsplash: "steel rebar" / "rebar stack") -->
     <div class="aco-img hero-media">
       <img src="./assets/img/rolo-aco.jpg"
            alt="Vergalhões e bobinas de aço empilhados em estoque" fetchpriority="high" decoding="async">
@@ -107,7 +107,7 @@ ob_start(); ?>
             <tr><td>CA-50</td><td>16,0mm</td><td>5/8"</td></tr>
             <tr><td>CA-50</td><td>20,0mm</td><td>3/4"</td></tr>
             <tr><td>CA-50</td><td>25,0mm</td><td>1"</td></tr>
-            <tr><td>CA-50</td><td>32,0mm</td><td>—</td></tr>
+            <tr><td>CA-50</td><td>32,0mm</td><td>-</td></tr>
           </tbody>
         </table>
       </div>
@@ -217,7 +217,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="cd-block reveal">
       <div class="cd-inner">
-        <!-- BANNER — sugestão: armação de aço cortada e dobrada pronta no canteiro / pátio Morandin (Unsplash: "rebar bending" / "construction steel yard") -->
+        <!-- BANNER: sugestão de armação de aço cortada e dobrada pronta no canteiro / pátio Morandin (Unsplash: "rebar bending" / "construction steel yard") -->
         <div class="aco-img cd-media">
           <img src="./assets/img/aco-cortado.jpg"
                alt="Armação de aço cortada e dobrada pronta para montagem na obra" loading="lazy" decoding="async">
@@ -231,7 +231,7 @@ ob_start(); ?>
             <span class="num">01</span>
             <div class="adv-tx">
               <h4>Armação cortada e dobrada</h4>
-              <p>Menos desperdício e mais economia na obra — você paga pelo aço que realmente usa.</p>
+              <p>Menos desperdício e mais economia na obra: você paga pelo aço que realmente usa.</p>
             </div>
           </div>
           <div class="adv">
@@ -252,13 +252,13 @@ ob_start(); ?>
             <span class="num">04</span>
             <div class="adv-tx">
               <h4>Receba sua armação pronta</h4>
-              <p>É só montar, amarrar e concretar — a armadura chega pronta para instalação.</p>
+              <p>É só montar, amarrar e concretar: a armadura chega pronta para instalação.</p>
             </div>
           </div>
         </div>
 
         <div class="cd-foot">
-          <span class="cd-stamp">Precisão e Eficiência — Tecnologia Industrial Morandin</span>
+          <span class="cd-stamp">Precisão e Eficiência · Tecnologia Industrial Morandin</span>
           <a class="pd-cta" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+A%C3%A7o+Cortado+e+Dobrado" target="_blank" rel="noopener">Solicitar AÇO Cortado e Dobrado <span>&rarr;</span></a>
         </div>
       </div>
