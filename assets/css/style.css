@@ -373,7 +373,7 @@ section{position:relative}
 .form-note{font-family:var(--mono);font-size:12px;color:var(--yellow-deep);margin-top:12px;min-height:16px}
 
 /* social row */
-.social{display:flex;gap:10px;margin-top:8px}
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
 .social a{
   width:46px;height:46px;border:1px solid var(--line-light);display:grid;place-items:center;color:#fff;transition:.2s;
 }

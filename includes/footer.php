@@ -24,6 +24,7 @@ $bm_logo = 'https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8
         <a href="<?= bm_sref($isHome, 'regioes') ?>">REGIÕES</a>
         <a href="<?= bm_sref($isHome, 'contato') ?>">CONTATO</a>
       </nav>
+      <div class="social"><?php include __DIR__ . '/social.php'; ?></div>
     </div>
     <div class="footer-bot">
       <span>©2025 BM ESTRUTURAL — Todos os direitos reservados · contato@bmestrutural.com.br · (19) 3878-2233</span>
