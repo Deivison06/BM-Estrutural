@@ -15,42 +15,62 @@ ob_start(); ?>
    ESTILOS DA HOME (index): inline no head para não tocar style.css
    ============================================================ */
 
-/* ---- HERO com vídeo full-screen ---- */
+/* ---- HERO: vídeo na metade direita, divisória diagonal dourada ---- */
 .hero-video{
   position:relative;
-  min-height:100vh;
-  min-height:100svh;
-  display:flex;
-  align-items:center;
   overflow:hidden;
   background:var(--navy-900);
 }
-.hero-bg-video{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  filter:saturate(0.75) brightness(0.7);
-}
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    180deg,
-    rgba(4,24,46,0.55) 0%,
-    rgba(4,24,46,0.72) 60%,
-    rgba(4,24,46,0.90) 100%
-  );
-}
-.hero-content{
+.hero-inner{
   position:relative;
   z-index:2;
+  display:flex;
+  align-items:center;
+  min-height:clamp(540px,82vh,780px);
+}
+.hero-content{
   color:#fff;
   display:flex;
   flex-direction:column;
   gap:22px;
-  padding-block:clamp(80px,12vh,140px);
+  max-width:min(500px,40vw);
+  padding-block:clamp(40px,8vh,90px);
+  padding-right:clamp(16px,3vw,48px);
+}
+
+/* painel de vídeo: metade direita, sangra até a borda, corte diagonal */
+.hero-media-video{
+  position:absolute;
+  top:0; right:0; bottom:0;
+  width:54%;
+  z-index:1;
+  background:var(--navy-900);
+}
+.hero-media-video::before{          /* fio dourado ao longo da diagonal */
+  content:"";
+  position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg,var(--yellow),var(--yellow-deep));
+  clip-path:polygon(13.2% 0, 100% 0, 100% 100%, -0.8% 100%);
+}
+.hero-media-video video{
+  position:absolute; inset:0; z-index:2;
+  width:100%; height:100%;
+  object-fit:cover; display:block;
+  clip-path:polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* mobile: empilha — vídeo cheio em moldura arredondada (sem diagonal) */
+@media (max-width:979px){
+  .hero-inner{ display:block; min-height:0; padding-block:clamp(40px,9vh,72px); }
+  .hero-content{ max-width:none; padding:0 0 26px; }
+  .hero-media-video{
+    position:relative; width:100%;
+    border-radius:var(--r-lg); overflow:hidden;
+    border-top:3px solid var(--yellow);
+    filter:none;
+  }
+  .hero-media-video::before{ display:none; }
+  .hero-media-video video{ position:static; clip-path:none; aspect-ratio:16/9; }
 }
 .hero-badge{
   font-family:var(--mono);
@@ -72,17 +92,17 @@ ob_start(); ?>
 .hero-title{
   font-family:var(--display);
   font-weight:800;
-  font-size:clamp(42px,7.5vw,80px);
-  line-height:.92;
+  font-size:clamp(36px,4.6vw,64px);
+  line-height:.98;
   letter-spacing:-.02em;
-  max-width:14ch;
+  max-width:16ch;
 }
 .hero-title .hl{ color:var(--yellow); }
 .hero-sub{
   font-size:clamp(16px,1.6vw,19px);
   line-height:1.65;
   color:rgba(255,255,255,.78);
-  max-width:50ch;
+  max-width:46ch;
 }
 .hero-actions{
   display:flex;
@@ -181,23 +201,25 @@ ob_start(); ?>
 }
 </style>
 <?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
-<!-- ============================ HERO COM VÍDEO FULL-SCREEN ============================ -->
+<!-- ============================ HERO: TEXTO + VÍDEO LADO A LADO ============================ -->
 <section class="hero-video" id="top-hero">
-  <video
-    class="hero-bg-video"
-    src="https://video.wixstatic.com/video/e9aa01_0ead27b3e69540c485024ad9b81a75a0/720p/mp4/file.mp4"
-    autoplay muted loop playsinline
-    poster="https://static.wixstatic.com/media/e9aa01_0ead27b3e69540c485024ad9b81a75a0f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85,enc_avif,quality_auto/e9aa01_0ead27b3e69540c485024ad9b81a75a0f000.jpg"
-  ></video>
-  <div class="hero-overlay"></div>
-  <div class="hero-content wrap">
-    <span class="hero-badge">BM ESTRUTURAL · 25 ANOS</span>
-    <h1 class="hero-title">LAJES <span class="hl">TRELIÇADAS</span><br>E AÇO PARA<br>CONSTRUÇÃO CIVIL</h1>
-    <p class="hero-sub">Fabricação própria de lajes e representante exclusivo Morandin, com soluções estruturais para toda a sua obra em Jundiaí, Campinas e todo o estado de São Paulo.</p>
-    <div class="hero-actions">
-      <a class="btn-solid" href="#produtos">Ver Produtos <span>&rarr;</span></a>
-      <a class="btn-ghost" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento</a>
+  <div class="wrap hero-inner">
+    <div class="hero-content">
+      <span class="hero-badge">BM ESTRUTURAL · 25 ANOS</span>
+      <h1 class="hero-title">LAJES <span class="hl">TRELIÇADAS</span> E AÇO PARA CONSTRUÇÃO CIVIL</h1>
+      <p class="hero-sub">Fabricação própria de lajes e representante exclusivo Morandin, com soluções estruturais para toda a sua obra em Jundiaí, Campinas e todo o estado de São Paulo.</p>
+      <div class="hero-actions">
+        <a class="btn-solid" href="#produtos">Ver Produtos <span>&rarr;</span></a>
+        <a class="btn-ghost" href="https://wa.me/551938782233" target="_blank" rel="noopener">Solicitar Orçamento</a>
+      </div>
     </div>
+  </div>
+  <div class="hero-media-video">
+    <video
+      src="/assets/video/file.mp4"
+      autoplay muted loop playsinline preload="metadata"
+      poster="https://static.wixstatic.com/media/e9aa01_0ead27b3e69540c485024ad9b81a75a0f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85,enc_avif,quality_auto/e9aa01_0ead27b3e69540c485024ad9b81a75a0f000.jpg"
+    ></video>
   </div>
 </section>
 

@@ -390,6 +390,9 @@ section{position:relative}
 .footer-nav a:hover{color:var(--yellow)}
 .footer-bot{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-block:24px;font-family:var(--body);font-size:12px;letter-spacing:.05em}
 .footer-bot .badge-y{color:var(--yellow)}
+.footer-credit{display:flex;align-items:center;justify-content:center;padding-block:18px;font-family:var(--body);font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.55)}
+.footer-credit .ello-chip{display:inline-flex;align-items:center;}
+.footer-credit img{height:100px;display:block}
 
 /* ============================================================
    SCROLL REVEAL
