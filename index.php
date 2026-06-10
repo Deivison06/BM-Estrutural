@@ -128,6 +128,16 @@ ob_start(); ?>
 .on-navy .obra-body p{ color:var(--muted); }
 .on-navy .obra-body .more{ color:var(--navy); }
 .on-navy .obra-body .more:hover{ color:var(--yellow-deep); }
+
+/* ---- QUEM SOMOS: galeria com duas imagens ---- */
+.about-gallery{ display:grid; gap:16px; }
+.about-gallery img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  border-radius:var(--r-lg);
+  box-shadow:var(--sh-md);
+}
 </style>
 <?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
 <!-- ============================ HERO COM VÍDEO FULL-SCREEN ============================ -->
@@ -247,7 +257,10 @@ ob_start(); ?>
         </div>
       </div>
       <div class="about-media reveal d2 ticks">
-        <img loading="lazy" decoding="async" src="./assets/img/bm-estrutural-vista-de-cima-com-logo.png" alt="Sede da BM Estrutural em Louveira/SP">
+        <div class="about-gallery">
+          <img loading="lazy" decoding="async" src="./assets/img/bm-estrutural-vista-de-cima-com-logo.png" alt="Vista aérea da sede da BM Estrutural em Louveira/SP">
+          <img loading="lazy" decoding="async" src="./assets/img/bm-entrada.png" alt="Entrada da BM Estrutural com caminhão carregado de lajes treliçadas para entrega">
+        </div>
         <span class="badge">SEDE · LOUVEIRA/SP</span>
       </div>
     </div>
