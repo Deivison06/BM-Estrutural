@@ -72,7 +72,7 @@ ob_start(); ?>
 .hero-title{
   font-family:var(--display);
   font-weight:800;
-  font-size:clamp(42px,7.5vw,100px);
+  font-size:clamp(42px,7.5vw,80px);
   line-height:.92;
   letter-spacing:-.02em;
   max-width:14ch;
