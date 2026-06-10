@@ -1,0 +1,8 @@
+# Dependências do Composer (subir via FTP ou rodar `composer install` no servidor)
+/vendor/
+
+# Credenciais SMTP reais — NÃO versionar
+/config.php
+
+# Log de envios do formulário
+/envio.log

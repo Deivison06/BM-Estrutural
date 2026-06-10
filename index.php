@@ -1,5 +1,11 @@
 <?php
 $active = 'home';
+
+// Feedback do formulário de contato (redirecionado por /contato)
+$form_status = '';
+if (isset($_GET['sucesso'])) { $form_status = 'ok'; }
+elseif (isset($_GET['erro'])) { $form_status = 'err'; }
+
 $title  = 'BM Estrutural | Lajes e Aço para Construção Civil em Jundiaí e Campinas';
 $desc   = 'BM Estrutural Soluções em Engenharia: 25 anos fabricando lajes treliçadas e representante exclusivo Morandin de aço para construção civil. Atendimento em todo o estado de São Paulo, com foco em Jundiaí e Campinas.';
 $cta_href = 'https://wa.me/551938782233';
@@ -128,6 +134,41 @@ ob_start(); ?>
 .on-navy .obra-body p{ color:var(--muted); }
 .on-navy .obra-body .more{ color:var(--navy); }
 .on-navy .obra-body .more:hover{ color:var(--yellow-deep); }
+
+/* ---- MODAL DE FEEDBACK DO FORMULÁRIO ---- */
+.fb-modal{
+  position:fixed; inset:0; z-index:9999;
+  display:flex; align-items:center; justify-content:center;
+  padding:24px;
+  background:rgba(4,24,46,.62);
+  backdrop-filter:blur(3px);
+}
+.fb-card{
+  position:relative;
+  width:min(420px,100%);
+  background:var(--paper);
+  border-radius:var(--r-lg);
+  box-shadow:var(--sh-md);
+  padding:38px 32px 32px;
+  text-align:center;
+}
+.fb-ico{
+  width:62px; height:62px; margin:0 auto 18px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+}
+.fb-card.ok  .fb-ico{ background:rgba(47,170,90,.14); color:#2faa5a; }
+.fb-card.err .fb-ico{ background:rgba(217,180,0,.16); color:var(--yellow-deep); }
+.fb-ico svg{ width:30px; height:30px; }
+.fb-card h3{ font-family:var(--display); color:var(--navy); font-size:24px; margin:0 0 8px; }
+.fb-card p{ color:var(--muted); line-height:1.6; margin:0 0 22px; }
+.fb-card .btn-solid{ width:100%; justify-content:center; }
+.fb-close{
+  position:absolute; top:12px; right:14px;
+  background:none; border:0; cursor:pointer;
+  font-size:26px; line-height:1; color:var(--muted);
+}
+.fb-close:hover{ color:var(--navy); }
 
 /* ---- QUEM SOMOS: galeria com duas imagens ---- */
 .about-gallery{ display:grid; gap:16px; }
@@ -398,21 +439,70 @@ ob_start(); ?>
         <div class="social reveal d2"><?php include __DIR__ . '/includes/social.php'; ?></div>
       </div>
 
-      <form class="form reveal d1" id="contact-form" novalidate>
+      <form class="form reveal d1" id="contact-form" action="/contato" method="post" novalidate>
         <div class="frow">
-          <div class="field"><label for="nome">Nome</label><input id="nome" type="text" placeholder="Nome"></div>
-          <div class="field"><label for="sobrenome">Sobrenome</label><input id="sobrenome" type="text" placeholder="Sobrenome"></div>
+          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="Nome" required></div>
+          <div class="field"><label for="sobrenome">Sobrenome</label><input id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome"></div>
         </div>
         <div class="frow">
-          <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="Email"></div>
-          <div class="field"><label for="telefone">Telefone</label><input id="telefone" type="tel" placeholder="Telefone"></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="Email" required></div>
+          <div class="field"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" placeholder="Telefone"></div>
         </div>
-        <div class="field full"><label for="msg">Mensagem</label><textarea id="msg" placeholder="Deixe-nos uma mensagem..."></textarea></div>
+        <div class="field full"><label for="msg">Mensagem</label><textarea id="msg" name="msg" placeholder="Deixe-nos uma mensagem..."></textarea></div>
+        <!-- honeypot anti-spam: oculto, deve ficar vazio -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <button type="submit" class="form-submit">Enviar <span>&rarr;</span></button>
         <div class="form-note" id="form-note"></div>
       </form>
     </div>
   </div>
 </section>
+
+<?php if ($form_status === 'ok'): ?>
+<div class="fb-modal" id="fb-modal" role="dialog" aria-modal="true" aria-labelledby="fb-title">
+  <div class="fb-card ok">
+    <button type="button" class="fb-close" data-fb-close aria-label="Fechar">&times;</button>
+    <div class="fb-ico">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h3 id="fb-title">Mensagem enviada!</h3>
+    <p>Recebemos seu contato e retornaremos em breve. Obrigado!</p>
+    <button type="button" class="btn-solid" data-fb-close>Fechar</button>
+  </div>
+</div>
+<?php elseif ($form_status === 'err'): ?>
+<div class="fb-modal" id="fb-modal" role="dialog" aria-modal="true" aria-labelledby="fb-title">
+  <div class="fb-card err">
+    <button type="button" class="fb-close" data-fb-close aria-label="Fechar">&times;</button>
+    <div class="fb-ico">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4m0 4h.01M10.3 3.86l-8.5 14.7A2 2 0 003.5 21h17a2 2 0 001.73-2.44l-8.5-14.7a2 2 0 00-3.46 0z"/></svg>
+    </div>
+    <h3 id="fb-title">Não foi possível enviar</h3>
+    <p>Ocorreu um erro ao enviar sua mensagem. Tente novamente ou fale conosco pelo WhatsApp (19) 3878-2233.</p>
+    <button type="button" class="btn-solid" data-fb-close>Fechar</button>
+  </div>
+</div>
+<?php endif; ?>
+<?php if ($form_status): ?>
+<script>
+(function () {
+  var modal = document.getElementById('fb-modal');
+  if (!modal) return;
+  function fechar() {
+    modal.remove();
+    // limpa ?sucesso/?erro da URL sem recarregar
+    if (window.history && history.replaceState) {
+      history.replaceState(null, '', location.pathname + '#contato');
+    }
+  }
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal || e.target.hasAttribute('data-fb-close')) fechar();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') fechar();
+  });
+})();
+</script>
+<?php endif; ?>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>

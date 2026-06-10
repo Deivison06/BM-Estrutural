@@ -118,17 +118,17 @@
   var note = document.getElementById('form-note');
   if (form && note) {
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
       var nome = (document.getElementById('nome').value || '').trim();
       var email = (document.getElementById('email').value || '').trim();
       if (!nome || !email) {
+        e.preventDefault();
         note.style.color = '#D9B400';
         note.textContent = '› Preencha ao menos Nome e Email.';
         return;
       }
+      // Válido: deixa o POST seguir para /contato (sem preventDefault)
       note.style.color = '#2faa5a';
-      note.textContent = '› Mensagem pronta para envio. (demonstração)';
-      form.reset();
+      note.textContent = '› Enviando...';
     });
   }
 
