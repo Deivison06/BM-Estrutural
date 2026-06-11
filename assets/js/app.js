@@ -132,4 +132,24 @@
     });
   }
 
+  /* ---------- MÁSCARA DE TELEFONE (BR) ---------- */
+  var tel = document.getElementById('telefone');
+  if (tel) {
+    var maskPhone = function (value) {
+      var d = value.replace(/\D/g, '').slice(0, 11);
+      if (d.length === 0) return '';
+      if (d.length < 3) return '(' + d;
+      var ddd = d.slice(0, 2);
+      var rest = d.slice(2);
+      if (d.length <= 6) return '(' + ddd + ') ' + rest;
+      if (d.length <= 10) return '(' + ddd + ') ' + rest.slice(0, 4) + '-' + rest.slice(4); // fixo
+      return '(' + ddd + ') ' + rest.slice(0, 5) + '-' + rest.slice(5);                     // celular
+    };
+    tel.setAttribute('inputmode', 'numeric');
+    tel.setAttribute('maxlength', '15');
+    tel.addEventListener('input', function () {
+      tel.value = maskPhone(tel.value);
+    });
+  }
+
 })();
