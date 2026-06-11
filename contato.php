@@ -32,6 +32,10 @@ function voltar(string $query): void {
     header('Location: /?' . $query . '#contato', true, 303);
     exit;
 }
+function sucesso(): void {            // página de agradecimento
+    header('Location: /obrigado', true, 303);
+    exit;
+}
 
 /* Só aceita POST */
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
@@ -55,7 +59,7 @@ $honeypot  = trim($_POST['website']   ?? ''); // anti-spam: deve vir vazio
 /* Bot preencheu o honeypot: finge sucesso e descarta */
 if ($honeypot !== '') {
     registrarLog('SPAM', $email, 'Honeypot preenchido');
-    voltar('sucesso=1');
+    sucesso();
 }
 
 /* ---------- Validação ---------- */
@@ -103,7 +107,7 @@ try {
     $mail->send();
 
     registrarLog('SUCESSO', $email, "Contato: $nomeCompleto | Tel: $telefone");
-    voltar('sucesso=1');
+    sucesso();
 } catch (Exception $e) {
     registrarLog('FALHA', $email, $mail->ErrorInfo);
     error_log('Erro PHPMailer: ' . $mail->ErrorInfo);

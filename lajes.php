@@ -413,4 +413,6 @@ ob_start(); ?>
 })();
 </script>
 
+<?php include __DIR__ . '/includes/contato.php'; ?>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>

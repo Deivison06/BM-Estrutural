@@ -302,4 +302,6 @@ ob_start(); ?>
   </div>
 </section>
 
+<?php include __DIR__ . '/includes/contato.php'; ?>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>

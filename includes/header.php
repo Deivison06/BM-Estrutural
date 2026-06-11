@@ -12,7 +12,7 @@ $active     = $active     ?? '';
 $title      = $title      ?? 'BM Estrutural | Lajes e Aço para Construção Civil';
 $desc       = $desc       ?? 'BM Estrutural Soluções em Engenharia — lajes treliçadas e aço para construção civil em Jundiaí, Campinas e todo o estado de São Paulo.';
 $head_extra = $head_extra ?? '';
-$cta_href   = $cta_href   ?? 'https://wa.me/551938782233';
+$cta_href   = $cta_href   ?? 'https://wa.me/551938782233?text=Estou+no+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es';
 $isHome     = ($active === 'home');
 
 /* link de seção: âncora interna na home; volta para a home nas demais páginas */
@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="<?= bm_sref($isHome, 'quem-somos') ?>">QUEM SOMOS</a>
       <a href="<?= bm_sref($isHome, 'obras') ?>">OBRAS</a>
       <a href="<?= bm_sref($isHome, 'regioes') ?>">REGIÕES</a>
-      <a href="<?= bm_sref($isHome, 'contato') ?>">CONTATO</a>
+      <a href="#contato">CONTATO</a>
     </nav>
     <a class="header-cta" href="<?= $cta_href ?>" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -81,6 +81,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="<?= bm_sref($isHome, 'quem-somos') ?>">QUEM SOMOS</a>
   <a href="<?= bm_sref($isHome, 'obras') ?>">OBRAS</a>
   <a href="<?= bm_sref($isHome, 'regioes') ?>">REGIÕES</a>
-  <a href="<?= bm_sref($isHome, 'contato') ?>">CONTATO</a>
+  <a href="#contato">CONTATO</a>
   <a class="cta-line" href="<?= $cta_href ?>" target="_blank" rel="noopener">Solicitar Orçamento &rarr;</a>
 </div>
