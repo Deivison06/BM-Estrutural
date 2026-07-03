@@ -23,9 +23,16 @@ if (!function_exists('bm_sref')) {
 }
 $inicioHref = $isHome ? '#top-hero' : '/';
 $bm_logo = 'https://static.wixstatic.com/media/e9aa01_ae47d8bda54545b3a6e85fc1d8172524~mv2.png/v1/fill/w_350,h_192,al_c,q_85,enc_avif,quality_auto/LOGO%20SITE_SEM_FUNDO.png';
+
+/* ---- SEO: canonical / Open Graph / robots (a página pode sobrescrever) ---- */
+$base_url   = 'https://www.bmestrutural.com.br';
+$canonical  = $base_url . ($canonical_path ?? strtok($_SERVER['REQUEST_URI'] ?? '/', '?'));
+$og_type    = $og_type  ?? 'website';
+$og_image   = $base_url . ($og_image_path ?? '/assets/img/bm-entrada.png'); // TODO: imagem dedicada 1200x630
+$robots     = $robots   ?? 'index, follow';
 ?>
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,8 +47,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <title><?= $title ?></title>
 <meta name="description" content="<?= $desc ?>">
+<meta name="robots" content="<?= $robots ?>">
+<link rel="canonical" href="<?= $canonical ?>">
+
+<!-- Open Graph -->
+<meta property="og:type" content="<?= $og_type ?>">
+<meta property="og:site_name" content="BM Estrutural">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="<?= htmlspecialchars($title, ENT_QUOTES) ?>">
+<meta property="og:description" content="<?= htmlspecialchars($desc, ENT_QUOTES) ?>">
+<meta property="og:url" content="<?= $canonical ?>">
+<meta property="og:image" content="<?= $og_image ?>">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?= htmlspecialchars($title, ENT_QUOTES) ?>">
+<meta name="twitter:description" content="<?= htmlspecialchars($desc, ENT_QUOTES) ?>">
+<meta name="twitter:image" content="<?= $og_image ?>">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 <?= $head_extra ?>

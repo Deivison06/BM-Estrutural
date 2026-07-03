@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /contato.php
+Disallow: /obrigado
+Disallow: /*?sucesso=
+Disallow: /*?erro=
+
+Sitemap: https://www.bmestrutural.com.br/sitemap.xml

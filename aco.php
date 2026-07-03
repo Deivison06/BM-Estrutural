@@ -1,7 +1,9 @@
 <?php
 $active = 'aco';
-$title  = 'Aço para Construção Civil | BM Estrutural, Representante Morandin';
-$desc   = 'Aço para construção civil com a BM Estrutural, representante exclusivo Morandin: vergalhões CA-50, fio CA-60, telas soldadas, arames, pregos, barras de transferência e aço cortado e dobrado, entregues na sua obra.';
+$canonical_path = '/aco';
+$og_image_path  = '/assets/img/banner-aco.jpeg';
+$title  = 'Aço para Construção Civil em Jundiaí, Campinas e Região | BM Estrutural';
+$desc   = 'Aço para construção civil em Jundiaí, Campinas, Louveira e região com a BM Estrutural, representante exclusivo Morandin: vergalhões CA-50, fio CA-60, telas soldadas, arames, pregos, barras de transferência e aço cortado e dobrado, entregues na sua obra.';
 $cta_href = 'https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+A%C3%A7o+para+constru%C3%A7%C3%A3o';
 ob_start(); ?>
 <style>
@@ -53,6 +55,29 @@ ob_start(); ?>
 .cd-media{aspect-ratio:16/6;margin-bottom:clamp(22px,3vw,32px);position:relative;z-index:2}
 @media (max-width:560px){ .cd-media{aspect-ratio:4/3} }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.bmestrutural.com.br/" },
+    { "@type": "ListItem", "position": 2, "name": "Aço para Construção Civil", "item": "https://www.bmestrutural.com.br/aco" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Aço para construção civil — BM Estrutural (Representante Morandin)",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Vergalhão CA-50", "category": "Aço para construção civil", "brand": { "@type": "Brand", "name": "Morandin" }, "description": "Vergalhão de aço CA-50 em barras de 12 m, alta aderência ao concreto." } },
+    { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Fio de Aço CA-60", "category": "Aço para construção civil", "brand": { "@type": "Brand", "name": "Morandin" }, "description": "Fio de aço CA-60 em barras de 12 m para armaduras e estribos." } },
+    { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Telas Soldadas", "category": "Aço para construção civil", "brand": { "@type": "Brand", "name": "Morandin" }, "description": "Telas soldadas em aço CA-60 para lajes, calçadas e estruturas." } },
+    { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Aço Cortado e Dobrado", "category": "Aço para construção civil", "brand": { "@type": "Brand", "name": "Morandin" }, "description": "Armação de aço cortada e dobrada sob projeto, entregue pronta na obra." } }
+  ]
+}
+</script>
 <?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
 
 <!-- ============================ HERO (texto + imagem) ============================ -->
@@ -61,7 +86,7 @@ ob_start(); ?>
     <div class="hero-copy">
       <span class="badge-tag">Representante Exclusivo Morandin</span>
       <h1>AÇO PARA <span class="hl">CONSTRUÇÃO CIVIL</span></h1>
-      <p class="lead">Vergalhões, telas soldadas e aço cortado e dobrado, entregues na sua obra com qualidade Morandin.</p>
+      <p class="lead">Vergalhões, telas soldadas e aço cortado e dobrado, entregues na sua obra em Jundiaí, Campinas, Louveira e região com qualidade Morandin.</p>
       <div class="hero-actions">
         <a class="btn-solid" href="<?= $cta_href ?>" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
         <a class="btn-ghost" href="#cortado-dobrado">Aço Cortado e Dobrado</a>
@@ -130,7 +155,7 @@ ob_start(); ?>
       </div>
       <div class="sec-rule"></div>
     </div>
-    <p class="sec-intro">Produzidas com tecnologia de ponta em aço CA-60, são ideais para lajes, calçadas e estruturas que exigem precisão e durabilidade. Reduzem fissuras e trazem agilidade na montagem.</p>
+    <p class="sec-intro">Produzidas com tecnologia de ponta em aço CA-60, são ideais para lajes, calçadas e estruturas que exigem precisão e durabilidade. Reduzem fissuras e trazem agilidade na montagem, combinando perfeitamente com nossas <a href="/lajes">lajes treliçadas</a>.</p>
 
     <div class="aco-tables">
     <div class="tbl-block reveal">

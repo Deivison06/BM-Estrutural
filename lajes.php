@@ -1,7 +1,9 @@
 <?php
 $active = 'lajes';
-$title  = 'Lajes Treliçadas | BM Estrutural, Louveira SP';
-$desc   = 'Lajes treliçadas de fabricação própria: unidirecional e bidirecional, painel treliçado, Laje Fácil, cortina de contenção e telas soldadas. Qualidade certificada para pequenos e grandes vãos. BM Estrutural, Louveira SP.';
+$canonical_path = '/lajes';
+$og_image_path  = '/assets/img/banner-lajes-trelicada.jpeg';
+$title  = 'Lajes Treliçadas em Jundiaí, Campinas e Região | BM Estrutural';
+$desc   = 'Lajes treliçadas de fabricação própria em Jundiaí, Campinas, Louveira e região: unidirecional e bidirecional, painel treliçado, Laje Fácil, cortina de contenção e telas soldadas. Qualidade certificada para pequenos e grandes vãos. BM Estrutural, Louveira SP.';
 $cta_href = 'https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes';
 ob_start(); ?>
 <style>
@@ -81,6 +83,30 @@ ob_start(); ?>
   .wc-arrow{width:46px;height:46px;font-size:18px}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.bmestrutural.com.br/" },
+    { "@type": "ListItem", "position": 2, "name": "Lajes Treliçadas", "item": "https://www.bmestrutural.com.br/lajes" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Lajes treliçadas de fabricação própria — BM Estrutural",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Laje Treliçada Unidirecional e Bidirecional", "category": "Laje treliçada", "brand": { "@type": "Brand", "name": "BM Estrutural" }, "description": "Sistema pré-fabricado com vigotas treliçadas e enchimento em EPS ou cerâmica." } },
+    { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Laje Painel Treliçado", "category": "Laje treliçada", "brand": { "@type": "Brand", "name": "BM Estrutural" }, "description": "Painel treliçado com fôrma zero e acabamento liso na face inferior." } },
+    { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Laje Fácil", "category": "Laje treliçada", "brand": { "@type": "Brand", "name": "BM Estrutural" }, "description": "Vigotas leves com encaixe intuitivo para instalação ágil e segura." } },
+    { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Cortina de Contenção — Painel Treliçado Duplo", "category": "Contenção estrutural", "brand": { "@type": "Brand", "name": "BM Estrutural" }, "description": "Painel treliçado duplo para estabilização de taludes e contenção de solo." } },
+    { "@type": "ListItem", "position": 5, "item": { "@type": "Product", "name": "Telas Soldadas", "category": "Aço para construção civil", "brand": { "@type": "Brand", "name": "BM Estrutural" }, "description": "Telas soldadas em aço CA-60 para lajes, calçadas e estruturas." } }
+  ]
+}
+</script>
 <?php $head_extra = ob_get_clean(); include __DIR__ . '/includes/header.php'; ?>
 <!-- ============================ HERO ============================ -->
 <section class="page-hero hero-banner" id="hero" style="--banner:url('/assets/img/banner-lajes-trelicada.jpeg')">
@@ -88,7 +114,7 @@ ob_start(); ?>
     <div class="hero-copy">
     <span class="badge-tag">Fabricação própria · 25 anos</span>
     <h1>LAJES <span class="hl">TRELIÇADAS</span></h1>
-    <p class="lead">Fabricação própria. Qualidade certificada. Soluções para pequenos e grandes vãos.</p>
+    <p class="lead">Fabricação própria. Qualidade certificada. Soluções para pequenos e grandes vãos em Jundiaí, Campinas, Louveira e região.</p>
     <div class="hero-actions">
       <a class="btn-solid" href="https://wa.me/551938782233?text=Ol%C3%A1%2C+quero+um+or%C3%A7amento+de+Lajes" target="_blank" rel="noopener">Solicitar Orçamento <span>&rarr;</span></a>
       <a class="btn-ghost" href="#laje-trelicada">Ver Produtos</a>
@@ -104,7 +130,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail reveal">
       <div class="pd-media ticks">
-        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional">
+        <img loading="lazy" decoding="async" width="1000" height="750" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional">
         <span class="pd-meta">LAJE TRELIÇADA</span>
       </div>
       <div class="pd-copy">
@@ -126,7 +152,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail flip reveal">
       <div class="pd-media ticks">
-        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Laje painel treliçado">
+        <img loading="lazy" decoding="async" width="1000" height="750" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Laje painel treliçado">
         <span class="pd-meta">PAINEL TRELIÇADO</span>
       </div>
       <div class="pd-copy">
@@ -149,7 +175,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail reveal">
       <div class="pd-media ticks">
-        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil">
+        <img loading="lazy" decoding="async" width="1000" height="750" src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil">
         <span class="pd-meta">LAJE FÁCIL</span>
       </div>
       <div class="pd-copy">
@@ -172,7 +198,7 @@ ob_start(); ?>
   <div class="wrap">
     <div class="prod-detail flip reveal">
       <div class="pd-media ticks">
-        <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Cortina de contenção: painel treliçado duplo">
+        <img loading="lazy" decoding="async" width="1000" height="750" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Cortina de contenção: painel treliçado duplo">
         <span class="pd-meta">CORTINA DE CONTENÇÃO</span>
       </div>
       <div class="pd-copy">
@@ -198,7 +224,7 @@ ob_start(); ?>
       </div>
       <div class="sec-rule"></div>
     </div>
-    <p class="sec-intro">Produzidas com aço CA-60 e soldagem elétrica automatizada, são ideais para lajes, calçadas e estruturas, reduzem fissuras e aceleram a montagem. Disponíveis nos modelos EQ45, EQ61, EQ92 e EQ138 (2,00×3,00 m) e Q61 a Q283 (2,45×6,00 m).</p>
+    <p class="sec-intro">Produzidas com aço CA-60 e soldagem elétrica automatizada, são ideais para lajes, calçadas e estruturas, reduzem fissuras e aceleram a montagem. Disponíveis nos modelos EQ45, EQ61, EQ92 e EQ138 (2,00×3,00 m) e Q61 a Q283 (2,45×6,00 m). Veja também nossa linha de <a href="/aco">aço para construção civil</a>.</p>
 
     <div class="tbl-block reveal">
       <div class="tbl-cap">Tela Soldada 2,00 × 3,00 m</div>

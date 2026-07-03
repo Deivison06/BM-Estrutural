@@ -1,5 +1,6 @@
 <?php
 $active = 'home';
+$canonical_path = '/';
 
 // Feedback do formulário de contato (redirecionado por /contato)
 $form_status = '';
@@ -244,41 +245,41 @@ ob_start(); ?>
     <div class="prod-grid">
       <article class="prod reveal">
         <div class="prod-img"><span class="prod-num">01</span>
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional"></div>
+          <img loading="lazy" decoding="async" width="800" height="600" src="https://static.wixstatic.com/media/e9aa01_7f2531a2b18946e8a5536e801b9fc29f~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/laje-trelicada-unidirecional-e-bidirecional-03.jpg" alt="Laje treliçada unidirecional e bidirecional"></div>
         <div class="prod-body">
           <h3>Laje Treliçada</h3>
           <p>Vigotas treliçadas com enchimento em EPS ou cerâmica, excelente opção para obras de pequeno e grande porte.</p>
-          <a class="prod-link" href="/lajes#laje-trelicada">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#laje-trelicada">Ver Laje Treliçada <span class="ar">&rarr;</span></a>
         </div>
       </article>
 
       <article class="prod reveal d1">
         <div class="prod-img"><span class="prod-num">02</span>
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Painel treliçado"></div>
+          <img loading="lazy" decoding="async" width="800" height="600" src="https://static.wixstatic.com/media/e9aa01_144fc9c06d66422a91927a9a026cbced~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/LAJE%20PAINEL.png" alt="Painel treliçado"></div>
         <div class="prod-body">
           <h3>Painel Treliçado</h3>
           <p>Fôrma zero e acabamento liso na face inferior, em painéis de 25 cm ou 1,10 m, pode ficar aparente.</p>
-          <a class="prod-link" href="/lajes#painel-trelicado">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#painel-trelicado">Ver Painel Treliçado <span class="ar">&rarr;</span></a>
         </div>
       </article>
 
       <article class="prod reveal d2">
         <div class="prod-img"><span class="prod-num">03</span>
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil"></div>
+          <img loading="lazy" decoding="async" width="800" height="600" src="https://static.wixstatic.com/media/e9aa01_2a4aef17c318401c83b389cd4fd10634~mv2.png/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/FACIL.png" alt="Laje Fácil"></div>
         <div class="prod-body">
           <h3>Laje Fácil</h3>
           <p>Leve, prática e com encaixe intuitivo: instalação ágil e segura, sem equipamentos pesados.</p>
-          <a class="prod-link" href="/lajes#laje-facil">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#laje-facil">Ver Laje Fácil <span class="ar">&rarr;</span></a>
         </div>
       </article>
 
       <article class="prod reveal d3">
         <div class="prod-img"><span class="prod-num">04</span>
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_6ea87fe0ab0b43cab3aceae7ac2d3e5d~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/team-image4.jpg" alt="Telas soldadas"></div>
+          <img loading="lazy" decoding="async" width="800" height="600" src="https://static.wixstatic.com/media/e9aa01_6ea87fe0ab0b43cab3aceae7ac2d3e5d~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_avif,quality_auto/team-image4.jpg" alt="Telas soldadas em aço CA-60"></div>
         <div class="prod-body">
           <h3>Telas Soldadas</h3>
           <p>Em aço CA-60, distribuem as cargas sobre as lajes e reduzem fissuras em calçadas e estruturas.</p>
-          <a class="prod-link" href="/lajes#telas">Saiba mais <span class="ar">&rarr;</span></a>
+          <a class="prod-link" href="/lajes#telas">Ver Telas Soldadas <span class="ar">&rarr;</span></a>
         </div>
       </article>
     </div>
@@ -343,37 +344,37 @@ ob_start(); ?>
     <div class="obras-grid">
       <article class="obra reveal">
         <div class="obra-img">
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_ff613288d5854aed8b9f62fb353d37e6~mv2.png/v1/crop/x_7,y_0,w_595,h_733/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/1.png" alt="Inovar">
+          <img loading="lazy" decoding="async" width="600" height="740" src="https://static.wixstatic.com/media/e9aa01_ff613288d5854aed8b9f62fb353d37e6~mv2.png/v1/crop/x_7,y_0,w_595,h_733/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/1.png" alt="Obra com lajes treliçadas da BM Estrutural — Inovar">
         </div>
         <div class="obra-body">
           <span class="n">/01</span>
           <h3>Inovar</h3>
           <p>Na BM Estrutural, a inovação é a chave para o sucesso. Trabalhamos com qualidade, agilidade e confiança.</p>
-          <a class="more" href="#contato">Leia mais &rarr;</a>
+          <a class="more" href="#contato">Fale com a BM Estrutural &rarr;</a>
         </div>
       </article>
 
       <article class="obra reveal d1">
         <div class="obra-img">
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_f83e9d99d41247e49c2555263e02933e~mv2.png/v1/crop/x_121,y_0,w_693,h_854/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/2.png" alt="Renovar">
+          <img loading="lazy" decoding="async" width="600" height="740" src="https://static.wixstatic.com/media/e9aa01_f83e9d99d41247e49c2555263e02933e~mv2.png/v1/crop/x_121,y_0,w_693,h_854/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/2.png" alt="Obra com lajes treliçadas da BM Estrutural — Renovar">
         </div>
         <div class="obra-body">
           <span class="n">/02</span>
           <h3>Renovar</h3>
           <p>Com tradição e tecnologia, a BM Estrutural renova sua obra com soluções inteligentes para a sua obra.</p>
-          <a class="more" href="#contato">Leia mais &rarr;</a>
+          <a class="more" href="#contato">Fale com a BM Estrutural &rarr;</a>
         </div>
       </article>
 
       <article class="obra reveal d2">
         <div class="obra-img">
-          <img loading="lazy" decoding="async" src="https://static.wixstatic.com/media/e9aa01_ebe5f9f6d71148a39f2510c1b531b08d~mv2.png/v1/crop/x_57,y_0,w_689,h_849/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/3.png" alt="Evoluir">
+          <img loading="lazy" decoding="async" width="600" height="740" src="https://static.wixstatic.com/media/e9aa01_ebe5f9f6d71148a39f2510c1b531b08d~mv2.png/v1/crop/x_57,y_0,w_689,h_849/fill/w_600,h_740,al_c,q_85,enc_avif,quality_auto/3.png" alt="Obra com lajes treliçadas da BM Estrutural — Evoluir">
         </div>
         <div class="obra-body">
           <span class="n">/03</span>
           <h3>Evoluir</h3>
           <p>A BM Estrutural evolui para entregar lajes com mais qualidade e agilidade.</p>
-          <a class="more" href="#contato">Leia mais &rarr;</a>
+          <a class="more" href="#contato">Fale com a BM Estrutural &rarr;</a>
         </div>
       </article>
     </div>

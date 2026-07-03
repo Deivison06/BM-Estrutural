@@ -1,5 +1,7 @@
 <?php
 $active = '';
+$robots = 'noindex, follow';
+$canonical_path = '/obrigado';
 $title  = 'Obrigado pelo contato | BM Estrutural';
 $desc   = 'Recebemos sua mensagem. A equipe da BM Estrutural retornará em breve.';
 ob_start(); ?>
